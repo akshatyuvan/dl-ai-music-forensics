@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+~$*
+data/
+*.wav
+*.npy
+*.pt
+*.zip
+rclone.conf
+kaggle.json
+Docs/
