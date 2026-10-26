@@ -11,3 +11,5 @@ data/
 rclone.conf
 kaggle.json
 Docs/
+CLAUDE.md
+.vscode/
