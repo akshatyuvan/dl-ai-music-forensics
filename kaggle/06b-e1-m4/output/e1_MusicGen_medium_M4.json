@@ -1,0 +1,74 @@
+{
+  "experiment": "E1_leave_one_generator_out",
+  "fold": "MusicGen_medium",
+  "withheld_generator": "MusicGen_medium",
+  "seen_generators": [
+    "audioldm2",
+    "musicldm",
+    "mustango",
+    "stable_audio_open"
+  ],
+  "seed": 42,
+  "selection_metric": "val_accuracy",
+  "n_train_real": 3746,
+  "n_train_synth": 2996,
+  "pos_weight": 1.2503,
+  "n_val": 1442,
+  "model": "M4",
+  "device": "Tesla T4",
+  "best_val_acc": 0.9951,
+  "best_epoch": 3,
+  "train_time_s": 1816.8,
+  "config": "pretrained MIT/ast-finetuned-audioset-10-10-0.4593, Adam 2e-05 wd 1e-4, batch 8, warmup 1 epoch + cosine to 0.01x per step, 4 epochs, clip 5.0, fp16 + GradScaler, pos_weight",
+  "closed_set": {
+    "balanced_accuracy": 0.9988,
+    "precision": 0.9969,
+    "recall": 1.0,
+    "f1": 0.9984,
+    "auc": 1.0,
+    "eer": 0.0025,
+    "n_real": 804,
+    "n_synth": 640
+  },
+  "open_set": {
+    "balanced_accuracy": 0.7761,
+    "precision": 0.9955,
+    "recall": 0.5547,
+    "f1": 0.7125,
+    "auc": 0.9821,
+    "eer": 0.0672,
+    "n_real": 804,
+    "n_synth": 804
+  },
+  "delta_bal_acc_open_minus_closed": -0.2226,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 0.1451,
+      "val_acc": 0.9639,
+      "val_bal_acc": 0.961,
+      "elapsed_s": 457.9
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.0316,
+      "val_acc": 0.982,
+      "val_bal_acc": 0.9797,
+      "elapsed_s": 912.6
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0104,
+      "val_acc": 0.9931,
+      "val_bal_acc": 0.9928,
+      "elapsed_s": 1365.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.001,
+      "val_acc": 0.9951,
+      "val_bal_acc": 0.995,
+      "elapsed_s": 1816.6
+    }
+  ]
+}

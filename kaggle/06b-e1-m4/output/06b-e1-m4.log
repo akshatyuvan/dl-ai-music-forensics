@@ -1,0 +1,117 @@
+[{"stream_name":"stderr","time":6.342630847,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.3426864609999996,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.236874721,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.236903963,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.236908273,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.236911006,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.834368598,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.834438883,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.834444811,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.834449091,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":39.816073927,"data":"2.11.0+cu128 5.16.1 | Tesla T4\n"}
+,{"stream_name":"stdout","time":102.381076893,"data":"{'train': 7491, 'val': 1602, 'test': 1604}\n"}
+,{"stream_name":"stderr","time":102.604312354,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":102.604342642,"data":"\n"}
+,{"stream_name":"stderr","time":102.604346911,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":102.724316619,"data":"AudioSet normalisation mean/std: -4.2677393 4.5689974\n"}
+,{"stream_name":"stdout","time":577.030166646,"data":"features (10697, 1024, 128) 474s | NaNs 0\n"}
+,{"stream_name":"stdout","time":578.564260892,"data":"{'MusicGen_medium': False, 'stable_audio_open': False, 'mustango': False}\n"}
+,{"stream_name":"stdout","time":578.56429508,"data":"\n"}
+,{"stream_name":"stdout","time":578.56430041,"data":"========== fold: withhold MusicGen_medium ==========\n"}
+,{"stream_name":"stdout","time":578.564304863,"data":"train real 3746 synth 2996 (pos_weight 1.250) | val 1442 | closed 1444\n"}
+,{"stream_name":"stderr","time":611.766766031,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":611.766799051,"data":"\n"}
+,{"stream_name":"stderr","time":611.766804773,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":613.800260254,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":613.800318459,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":613.800325349,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":613.800341701,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":613.800345668,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":613.800349236,"data":"\n"}
+,{"stream_name":"stderr","time":613.800352301,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":613.800355521,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stderr","time":613.800359104,"data":"\n"}
+,{"stream_name":"stderr","time":613.800362207,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":613.800365712,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":613.800369133,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":613.8003726,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":613.800377927,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":613.800394793,"data":"\n"}
+,{"stream_name":"stderr","time":613.800398568,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":613.800402288,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stderr","time":617.83699505,"data":"/tmp/ipykernel_22/2353551604.py:64: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":617.837032688,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stderr","time":617.8370361570001,"data":"\n"}
+,{"stream_name":"stderr","time":617.837038575,"data":"/tmp/ipykernel_22/2353551604.py:64: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":617.837041828,"data":"  scaler.step(opt); scaler.update(); sched.step()\n"}
+,{"stream_name":"stdout","time":1072.121170098,"data":"  epoch 0  train_loss 0.1451  val_acc 0.9639  (458s)\n"}
+,{"stream_name":"stdout","time":1526.779977935,"data":"  epoch 1  train_loss 0.0316  val_acc 0.9820  (913s)\n"}
+,{"stream_name":"stdout","time":1979.223264318,"data":"  epoch 2  train_loss 0.0104  val_acc 0.9931  (1365s)\n"}
+,{"stream_name":"stdout","time":2430.778519462,"data":"  epoch 3  train_loss 0.0010  val_acc 0.9951  (1817s)\n"}
+,{"stream_name":"stdout","time":2488.483164171,"data":"  M4: closed 0.9988 -\u003e open 0.7761 (withheld recall 0.5547, open AUC 0.9821)\n"}
+,{"stream_name":"stdout","time":2488.679049397,"data":"\n"}
+,{"stream_name":"stdout","time":2488.679082617,"data":"========== fold: withhold stable_audio_open ==========\n"}
+,{"stream_name":"stdout","time":2488.679087224,"data":"train real 3746 synth 2996 (pos_weight 1.250) | val 1442 | closed 1444\n"}
+,{"stream_name":"stderr","time":2543.194587616,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":2543.194616509,"data":"\n"}
+,{"stream_name":"stderr","time":2543.194622765,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":2543.389209857,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":2543.389239507,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":2543.38924748,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":2543.389256289,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":2543.389273314,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":2543.389278549,"data":"\n"}
+,{"stream_name":"stderr","time":2543.38928311,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":2543.389287937,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stderr","time":2543.389292973,"data":"\n"}
+,{"stream_name":"stderr","time":2543.389297002,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":2543.389301509,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":2543.38930593,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":2543.38931039,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":2543.389316566,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":2543.389323547,"data":"\n"}
+,{"stream_name":"stderr","time":2543.389326221,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":2543.389328965,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stdout","time":3007.498493466,"data":"  epoch 0  train_loss 0.1466  val_acc 0.9896  (464s)\n"}
+,{"stream_name":"stdout","time":3462.979326699,"data":"  epoch 1  train_loss 0.0399  val_acc 0.9945  (919s)\n"}
+,{"stream_name":"stdout","time":3915.583859582,"data":"  epoch 2  train_loss 0.0101  val_acc 0.9979  (1372s)\n"}
+,{"stream_name":"stdout","time":4367.147271871,"data":"  epoch 3  train_loss 0.0010  val_acc 0.9986  (1824s)\n"}
+,{"stream_name":"stdout","time":4424.359038556,"data":"  M4: closed 0.9972 -\u003e open 0.6312 (withheld recall 0.2649, open AUC 0.9441)\n"}
+,{"stream_name":"stdout","time":4424.554241278,"data":"\n"}
+,{"stream_name":"stdout","time":4424.55427901,"data":"========== fold: withhold mustango ==========\n"}
+,{"stream_name":"stdout","time":4424.554284912,"data":"train real 3746 synth 2996 (pos_weight 1.250) | val 1442 | closed 1444\n"}
+,{"stream_name":"stderr","time":4479.108742102,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":4479.108774263,"data":"\n"}
+,{"stream_name":"stderr","time":4479.108779882,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":4479.299321475,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":4479.299349751,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":4479.29935565,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":4479.299360984,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":4479.299366021,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":4479.299371185,"data":"\n"}
+,{"stream_name":"stderr","time":4479.29937547,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":4479.299379525,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stderr","time":4479.299384686,"data":"\n"}
+,{"stream_name":"stderr","time":4479.299389267,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":4479.29939392,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":4479.299403749,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":4479.299407925,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":4479.29941098,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":4479.2994141,"data":"\n"}
+,{"stream_name":"stderr","time":4479.299416756,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":4479.29941945,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stdout","time":4943.974444527,"data":"  epoch 0  train_loss 0.1621  val_acc 0.9487  (465s)\n"}
+,{"stream_name":"stdout","time":5397.849922385,"data":"  epoch 1  train_loss 0.0380  val_acc 0.9653  (918s)\n"}
+,{"stream_name":"stdout","time":5848.002495088,"data":"  epoch 2  train_loss 0.0072  val_acc 0.9951  (1369s)\n"}
+,{"stream_name":"stdout","time":6297.645534442,"data":"  epoch 3  train_loss 0.0001  val_acc 0.9945  (1818s)\n"}
+,{"stream_name":"stdout","time":6355.125322671,"data":"  M4: closed 0.9953 -\u003e open 0.9683 (withheld recall 0.9428, open AUC 0.9966)\n"}
+,{"stream_name":"stdout","time":6355.270563147,"data":"['__notebook__.ipynb', 'e1_MusicGen_medium_M4.json', 'e1_MusicGen_medium_M4_fp16.pt', 'e1_mustango_M4.json', 'e1_mustango_M4_fp16.pt', 'e1_stable_audio_open_M4.json', 'e1_stable_audio_open_M4_fp16.pt']\n"}
+,{"stream_name":"stderr","time":6360.299122619,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6360.299149608,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6360.462192026,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6360.46221912,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6361.261293934,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":6361.346609409,"data":"[NbConvertApp] Writing 104575 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":6363.722758742,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6364.276253195,"data":"[NbConvertApp] Writing 415909 bytes to __results__.html\n"}
+]

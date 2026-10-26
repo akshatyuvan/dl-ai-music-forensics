@@ -1,0 +1,15 @@
+{
+  "id": "akshatyuvan/06b-e1-m4",
+  "title": "06b-e1-m4",
+  "code_file": "06b-e1-m4.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["akshatyuvan/fmc-m2-mels", "akshatyuvan/fakemusiccaps-raw", "akshatyuvan/musiccaps-real-16k", "akshatyuvan/fmc-manifest", "akshatyuvan/fmc-e1-results"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
