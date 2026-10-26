@@ -1,0 +1,65 @@
+[{"stream_name":"stderr","time":6.666730852,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.666768763,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.620050391,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.620093096,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.620098638,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.620102956,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.244005004,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.24403482,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.244040287,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.244044214,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":41.549912506,"data":"2.11.0+cu128 5.16.1 Tesla T4\n"}
+,{"stream_name":"stderr","time":59.496169191999996,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":59.496196456,"data":"\n"}
+,{"stream_name":"stderr","time":59.49620209,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":59.815781914,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":59.815829755,"data":"\n"}
+,{"stream_name":"stderr","time":59.815835014,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":61.94221994,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":61.942258064,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":61.942270172,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":61.942273978,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":61.942277444,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":61.942280855999996,"data":"\n"}
+,{"stream_name":"stderr","time":61.942283884,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":61.94228719,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stderr","time":61.942290527,"data":"\n"}
+,{"stream_name":"stderr","time":61.942304952,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":61.94230783,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":61.942310379,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":61.942312859,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":61.94231531,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":61.942320963,"data":"\n"}
+,{"stream_name":"stderr","time":61.942323295,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":61.942325629,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stdout","time":187.749559553,"data":"intact bal acc 0.9988 | published 0.9988\n"}
+,{"stream_name":"stdout","time":187.749593595,"data":"intact       M4 bal 0.9988 spec 0.998 rec 1.000 auc 1.000  (119s)\n"}
+,{"stream_name":"stdout","time":231.259716312,"data":"lowpass_7k   M4 bal 0.9231 spec 0.999 rec 0.848 auc 0.995  (44s)\n"}
+,{"stream_name":"stdout","time":276.997281206,"data":"lowpass_6k   M4 bal 0.9788 spec 0.996 rec 0.961 auc 0.999  (46s)\n"}
+,{"stream_name":"stdout","time":324.848484167,"data":"lowpass_5k   M4 bal 0.8350 spec 0.998 rec 0.672 auc 0.973  (48s)\n"}
+,{"stream_name":"stdout","time":371.272437056,"data":"lowpass_4k   M4 bal 0.7825 spec 1.000 rec 0.565 auc 0.956  (46s)\n"}
+,{"stream_name":"stdout","time":418.753311163,"data":"lowpass_3k   M4 bal 0.7375 spec 1.000 rec 0.475 auc 0.940  (47s)\n"}
+,{"stream_name":"stdout","time":466.243461805,"data":"lowpass_2k   M4 bal 0.6756 spec 0.999 rec 0.352 auc 0.913  (47s)\n"}
+,{"stream_name":"stdout","time":673.651234571,"data":"mp3_128k     M4 bal 0.9826 spec 0.970 rec 0.995 auc 0.999  (207s)\n"}
+,{"stream_name":"stdout","time":878.22754971,"data":"mp3_64k      M4 bal 0.9688 spec 0.974 rec 0.964 auc 0.994  (205s)\n"}
+,{"stream_name":"stdout","time":1085.689104463,"data":"mp3_32k      M4 bal 0.5888 spec 0.999 rec 0.179 auc 0.913  (207s)\n"}
+,{"stream_name":"stdout","time":1085.706758862,"data":" condition model  bal_acc  delta_vs_intact  specificity_real  recall_synth    auc    eer  rec_MusicGen_medium  rec_audioldm2  rec_musicldm  rec_mustango  rec_stable_audio_open\n"}
+,{"stream_name":"stdout","time":1085.706777719,"data":"    intact    M4   0.9988           0.0000            0.9975        1.0000 1.0000 0.0012               1.0000         1.0000        1.0000        1.0000                 1.0000\n"}
+,{"stream_name":"stdout","time":1085.70678398,"data":"lowpass_7k    M4   0.9231          -0.0757            0.9988        0.8475 0.9951 0.0299               0.9187         0.9000        0.7500        0.6875                 0.9812\n"}
+,{"stream_name":"stdout","time":1085.706789193,"data":"lowpass_6k    M4   0.9788          -0.0200            0.9963        0.9613 0.9992 0.0137               0.9750         0.9750        0.9688        0.8875                 1.0000\n"}
+,{"stream_name":"stdout","time":1085.706794422,"data":"lowpass_5k    M4   0.8350          -0.1638            0.9975        0.6725 0.9725 0.0846               0.9313         0.6562        0.5000        0.2812                 0.9938\n"}
+,{"stream_name":"stdout","time":1085.706799762,"data":"lowpass_4k    M4   0.7825          -0.2163            1.0000        0.5650 0.9557 0.1132               0.8750         0.5437        0.2625        0.2062                 0.9375\n"}
+,{"stream_name":"stdout","time":1085.706816403,"data":"lowpass_3k    M4   0.7375          -0.2613            1.0000        0.4750 0.9403 0.1493               0.7750         0.3688        0.1938        0.1125                 0.9250\n"}
+,{"stream_name":"stdout","time":1085.706820654,"data":"lowpass_2k    M4   0.6756          -0.3232            0.9988        0.3525 0.9126 0.1741               0.5875         0.1812        0.1000        0.0250                 0.8688\n"}
+,{"stream_name":"stdout","time":1085.706824378,"data":"  mp3_128k    M4   0.9826          -0.0162            0.9701        0.9950 0.9994 0.0149               0.9938         0.9938        0.9938        0.9938                 1.0000\n"}
+,{"stream_name":"stdout","time":1085.706828155,"data":"   mp3_64k    M4   0.9688          -0.0300            0.9739        0.9637 0.9943 0.0386               0.9625         0.9812        0.9437        0.9375                 0.9938\n"}
+,{"stream_name":"stdout","time":1085.706831735,"data":"   mp3_32k    M4   0.5888          -0.4100            0.9988        0.1787 0.9135 0.1692               0.2062         0.2000        0.2125        0.0563                 0.2188\n"}
+,{"stream_name":"stderr","time":1090.806963442,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1090.806990584,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1090.981966876,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1090.981992104,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1091.755476704,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1091.83674201,"data":"[NbConvertApp] Writing 76786 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1094.227255107,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1094.756819968,"data":"[NbConvertApp] Writing 375263 bytes to __results__.html\n"}
+]

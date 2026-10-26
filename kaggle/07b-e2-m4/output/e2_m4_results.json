@@ -1,0 +1,235 @@
+{
+  "experiment": "E2_shortcut_audit_test_time",
+  "model": "M4",
+  "seed": 42,
+  "split": "test",
+  "n_test": 1604,
+  "checkpoint": "fmc-m4-results/m4_best_fp16.pt",
+  "published_bal_acc": 0.9988,
+  "ffmpeg": "/usr/bin/ffmpeg",
+  "lowpass_filter": "Butterworth order 8, sosfiltfilt (zero phase)",
+  "mp3_codec": "libmp3lame CBR, decoded by ffmpeg to 16 kHz float",
+  "front_end": "ASTFeatureExtractor on the perturbed waveform",
+  "conditions": {
+    "intact": {
+      "kind": null,
+      "arg": null,
+      "M4": {
+        "balanced_accuracy": 0.9988,
+        "precision": 0.9975,
+        "recall": 1.0,
+        "f1": 0.9988,
+        "auc": 1.0,
+        "eer": 0.0012,
+        "specificity_real": 0.9975,
+        "recall_per_generator": {
+          "MusicGen_medium": 1.0,
+          "audioldm2": 1.0,
+          "musicldm": 1.0,
+          "mustango": 1.0,
+          "stable_audio_open": 1.0
+        },
+        "mean_score_real": 0.003,
+        "mean_score_synth": 0.9998
+      }
+    },
+    "lowpass_7k": {
+      "kind": "lowpass",
+      "arg": 7000,
+      "M4": {
+        "balanced_accuracy": 0.9231,
+        "precision": 0.9985,
+        "recall": 0.8475,
+        "f1": 0.9168,
+        "auc": 0.9951,
+        "eer": 0.0299,
+        "specificity_real": 0.9988,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.9187,
+          "audioldm2": 0.9,
+          "musicldm": 0.75,
+          "mustango": 0.6875,
+          "stable_audio_open": 0.9812
+        },
+        "mean_score_real": 0.0015,
+        "mean_score_synth": 0.8438
+      }
+    },
+    "lowpass_6k": {
+      "kind": "lowpass",
+      "arg": 6000,
+      "M4": {
+        "balanced_accuracy": 0.9788,
+        "precision": 0.9961,
+        "recall": 0.9613,
+        "f1": 0.9784,
+        "auc": 0.9992,
+        "eer": 0.0137,
+        "specificity_real": 0.9963,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.975,
+          "audioldm2": 0.975,
+          "musicldm": 0.9688,
+          "mustango": 0.8875,
+          "stable_audio_open": 1.0
+        },
+        "mean_score_real": 0.0043,
+        "mean_score_synth": 0.9585
+      }
+    },
+    "lowpass_5k": {
+      "kind": "lowpass",
+      "arg": 5000,
+      "M4": {
+        "balanced_accuracy": 0.835,
+        "precision": 0.9963,
+        "recall": 0.6725,
+        "f1": 0.803,
+        "auc": 0.9725,
+        "eer": 0.0846,
+        "specificity_real": 0.9975,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.9313,
+          "audioldm2": 0.6562,
+          "musicldm": 0.5,
+          "mustango": 0.2812,
+          "stable_audio_open": 0.9938
+        },
+        "mean_score_real": 0.0021,
+        "mean_score_synth": 0.6744
+      }
+    },
+    "lowpass_4k": {
+      "kind": "lowpass",
+      "arg": 4000,
+      "M4": {
+        "balanced_accuracy": 0.7825,
+        "precision": 1.0,
+        "recall": 0.565,
+        "f1": 0.722,
+        "auc": 0.9557,
+        "eer": 0.1132,
+        "specificity_real": 1.0,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.875,
+          "audioldm2": 0.5437,
+          "musicldm": 0.2625,
+          "mustango": 0.2062,
+          "stable_audio_open": 0.9375
+        },
+        "mean_score_real": 0.0011,
+        "mean_score_synth": 0.5707
+      }
+    },
+    "lowpass_3k": {
+      "kind": "lowpass",
+      "arg": 3000,
+      "M4": {
+        "balanced_accuracy": 0.7375,
+        "precision": 1.0,
+        "recall": 0.475,
+        "f1": 0.6441,
+        "auc": 0.9403,
+        "eer": 0.1493,
+        "specificity_real": 1.0,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.775,
+          "audioldm2": 0.3688,
+          "musicldm": 0.1938,
+          "mustango": 0.1125,
+          "stable_audio_open": 0.925
+        },
+        "mean_score_real": 0.0006,
+        "mean_score_synth": 0.4707
+      }
+    },
+    "lowpass_2k": {
+      "kind": "lowpass",
+      "arg": 2000,
+      "M4": {
+        "balanced_accuracy": 0.6756,
+        "precision": 0.9965,
+        "recall": 0.3525,
+        "f1": 0.5208,
+        "auc": 0.9126,
+        "eer": 0.1741,
+        "specificity_real": 0.9988,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.5875,
+          "audioldm2": 0.1812,
+          "musicldm": 0.1,
+          "mustango": 0.025,
+          "stable_audio_open": 0.8688
+        },
+        "mean_score_real": 0.0011,
+        "mean_score_synth": 0.3497
+      }
+    },
+    "mp3_128k": {
+      "kind": "mp3",
+      "arg": 128,
+      "M4": {
+        "balanced_accuracy": 0.9826,
+        "precision": 0.9707,
+        "recall": 0.995,
+        "f1": 0.9827,
+        "auc": 0.9994,
+        "eer": 0.0149,
+        "specificity_real": 0.9701,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.9938,
+          "audioldm2": 0.9938,
+          "musicldm": 0.9938,
+          "mustango": 0.9938,
+          "stable_audio_open": 1.0
+        },
+        "mean_score_real": 0.0303,
+        "mean_score_synth": 0.9951
+      }
+    },
+    "mp3_64k": {
+      "kind": "mp3",
+      "arg": 64,
+      "M4": {
+        "balanced_accuracy": 0.9688,
+        "precision": 0.9735,
+        "recall": 0.9637,
+        "f1": 0.9686,
+        "auc": 0.9943,
+        "eer": 0.0386,
+        "specificity_real": 0.9739,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.9625,
+          "audioldm2": 0.9812,
+          "musicldm": 0.9437,
+          "mustango": 0.9375,
+          "stable_audio_open": 0.9938
+        },
+        "mean_score_real": 0.0271,
+        "mean_score_synth": 0.9612
+      }
+    },
+    "mp3_32k": {
+      "kind": "mp3",
+      "arg": 32,
+      "M4": {
+        "balanced_accuracy": 0.5888,
+        "precision": 0.9931,
+        "recall": 0.1787,
+        "f1": 0.303,
+        "auc": 0.9135,
+        "eer": 0.1692,
+        "specificity_real": 0.9988,
+        "recall_per_generator": {
+          "MusicGen_medium": 0.2062,
+          "audioldm2": 0.2,
+          "musicldm": 0.2125,
+          "mustango": 0.0563,
+          "stable_audio_open": 0.2188
+        },
+        "mean_score_real": 0.0011,
+        "mean_score_synth": 0.175
+      }
+    }
+  }
+}
