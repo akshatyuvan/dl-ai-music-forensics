@@ -1,0 +1,50 @@
+[{"stream_name":"stderr","time":6.732262715,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.73231319,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.676272361,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.676300416,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.67630511,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.676314414,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.298311208,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.298338655,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.298341889,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.298344296,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":18.434907247,"data":"2.11.0+cu128 cuda 4 cpus\n"}
+,{"stream_name":"stdout","time":69.342397294,"data":"1604 -45.66265869140625 17.119544982910156\n"}
+,{"stream_name":"stdout","time":99.685944213,"data":"cams (1604, 16, 125) | balanced accuracy in fp32 (should be ~0.9732): 0.9732\n"}
+,{"stream_name":"stdout","time":101.389905484,"data":"uniform share for 2 of 16 rows = 0.125\n"}
+,{"stream_name":"stdout","time":101.389939419,"data":"real               n= 791  share in top 2 rows (5310-8000 Hz): 0.117  | peak row 13\n"}
+,{"stream_name":"stdout","time":101.389946052,"data":"synthetic (all)    n= 770  share in top 2 rows (5310-8000 Hz): 0.260  | peak row 13\n"}
+,{"stream_name":"stdout","time":101.389950971,"data":"MusicGen_medium    n= 153  share in top 2 rows (5310-8000 Hz): 0.238  | peak row 13\n"}
+,{"stream_name":"stdout","time":101.389956455,"data":"audioldm2          n= 159  share in top 2 rows (5310-8000 Hz): 0.292  | peak row 13\n"}
+,{"stream_name":"stdout","time":101.389961679,"data":"musicldm           n= 155  share in top 2 rows (5310-8000 Hz): 0.272  | peak row 13\n"}
+,{"stream_name":"stdout","time":101.389966847,"data":"mustango           n= 159  share in top 2 rows (5310-8000 Hz): 0.291  | peak row 13\n"}
+,{"stream_name":"stdout","time":101.389972273,"data":"stable_audio_open  n= 144  share in top 2 rows (5310-8000 Hz): 0.199  | peak row 13\n"}
+,{"stream_name":"stdout","time":101.422297415,"data":"real {'n': 791, 'mean_top2_row_share': 0.4939, 'peak_row_mode': 13, 'peak_row_mode_hz': [4378, 5439], 'frac_clips_peak_at_mode': 0.5487, 'share_top2_freq_rows': 0.1168}\n"}
+,{"stream_name":"stdout","time":101.422325025,"data":"synthetic (all) {'n': 770, 'mean_top2_row_share': 0.5957, 'peak_row_mode': 13, 'peak_row_mode_hz': [4378, 5439], 'frac_clips_peak_at_mode': 0.913, 'share_top2_freq_rows': 0.2597}\n"}
+,{"stream_name":"stdout","time":101.42233196,"data":"MusicGen_medium {'n': 153, 'mean_top2_row_share': 0.5611, 'peak_row_mode': 13, 'peak_row_mode_hz': [4378, 5439], 'frac_clips_peak_at_mode': 0.8562, 'share_top2_freq_rows': 0.2379}\n"}
+,{"stream_name":"stdout","time":101.422337487,"data":"audioldm2 {'n': 159, 'mean_top2_row_share': 0.6316, 'peak_row_mode': 13, 'peak_row_mode_hz': [4378, 5439], 'frac_clips_peak_at_mode': 0.9497, 'share_top2_freq_rows': 0.2921}\n"}
+,{"stream_name":"stdout","time":101.42235451,"data":"musicldm {'n': 155, 'mean_top2_row_share': 0.6585, 'peak_row_mode': 13, 'peak_row_mode_hz': [4378, 5439], 'frac_clips_peak_at_mode': 0.9226, 'share_top2_freq_rows': 0.272}\n"}
+,{"stream_name":"stdout","time":101.422359095,"data":"mustango {'n': 159, 'mean_top2_row_share': 0.655, 'peak_row_mode': 13, 'peak_row_mode_hz': [4378, 5439], 'frac_clips_peak_at_mode': 0.956, 'share_top2_freq_rows': 0.2914}\n"}
+,{"stream_name":"stdout","time":101.422363406,"data":"stable_audio_open {'n': 144, 'mean_top2_row_share': 0.4596, 'peak_row_mode': 13, 'peak_row_mode_hz': [4378, 5439], 'frac_clips_peak_at_mode': 0.875, 'share_top2_freq_rows': 0.1992}\n"}
+,{"stream_name":"stdout","time":105.639913832,"data":"['__notebook__.ipynb', 'gradcam_m2_examples.png', 'gradcam_m2_freq_profile.png', 'gradcam_m2_mean_maps.png', 'gradcam_m2_results.json']\n"}
+,{"stream_name":"stdout","time":117.283317691,"data":"REAL_DIR /kaggle/input/musiccaps-real-16k | RAW_DIR /kaggle/input/fakemusiccaps-raw\n"}
+,{"stream_name":"stdout","time":249.665602909,"data":"real {'max_peak_db_above_local_median': 12.5, 'top5_peak_hz': [4516, 4520, 4523, 4512, 6449], 'mean_db_4_6khz_minus_2_4khz': -2.95}\n"}
+,{"stream_name":"stdout","time":249.665637061,"data":"MusicGen_medium {'max_peak_db_above_local_median': 13.25, 'top5_peak_hz': [5301, 3137, 5297, 3141, 4621], 'mean_db_4_6khz_minus_2_4khz': -2.87}\n"}
+,{"stream_name":"stdout","time":249.665643315,"data":"audioldm2 {'max_peak_db_above_local_median': 4.21, 'top5_peak_hz': [5879, 3145, 5875, 3137, 7301], 'mean_db_4_6khz_minus_2_4khz': -3.6}\n"}
+,{"stream_name":"stdout","time":249.665648636,"data":"musicldm {'max_peak_db_above_local_median': 11.4, 'top5_peak_hz': [7996, 8000, 7992, 7988, 7984], 'mean_db_4_6khz_minus_2_4khz': -6.26}\n"}
+,{"stream_name":"stdout","time":249.665653475,"data":"mustango {'max_peak_db_above_local_median': 6.91, 'top5_peak_hz': [8000, 3801, 7996, 7000, 5879], 'mean_db_4_6khz_minus_2_4khz': -5.69}\n"}
+,{"stream_name":"stdout","time":249.665658135,"data":"stable_audio_open {'max_peak_db_above_local_median': 13.96, 'top5_peak_hz': [3145, 3523, 3141, 6719, 3520], 'mean_db_4_6khz_minus_2_4khz': -0.74}\n"}
+,{"stream_name":"stderr","time":256.095985414,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":256.096015403,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":256.256471888,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":256.256516055,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":256.989279926,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":257.089714701,"data":"[NbConvertApp] Writing 1908581 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":259.462391236,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":260.063936074,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":260.063962636,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":260.064138231,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":260.064447048,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":260.064911624,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":260.065257074,"data":"[NbConvertApp] Writing 356296 bytes to __results__.html\n"}
+]

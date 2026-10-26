@@ -1,0 +1,19 @@
+{
+  "id": "akshatyuvan/08-m2-gradcam",
+  "title": "08-m2-gradcam",
+  "code_file": "08-m2-gradcam.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "akshatyuvan/fmc-m2-mels",
+    "akshatyuvan/fakemusiccaps-raw",
+    "akshatyuvan/musiccaps-real-16k"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

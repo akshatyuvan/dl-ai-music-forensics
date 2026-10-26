@@ -1,0 +1,349 @@
+{
+  "model": "M2_CNN",
+  "checkpoint": "fmc-m2-mels/m2_best.pt",
+  "split": "test",
+  "n_test": 1604,
+  "seed": 42,
+  "fp32_balanced_accuracy": 0.9732,
+  "target_layer": "features[3][5] (last ReLU before final max-pool), 16 x 125 map",
+  "row_hz": [
+    [
+      0,
+      210
+    ],
+    [
+      187,
+      398
+    ],
+    [
+      374,
+      585
+    ],
+    [
+      561,
+      772
+    ],
+    [
+      748,
+      959
+    ],
+    [
+      935,
+      1162
+    ],
+    [
+      1135,
+      1409
+    ],
+    [
+      1376,
+      1709
+    ],
+    [
+      1669,
+      2073
+    ],
+    [
+      2024,
+      2514
+    ],
+    [
+      2454,
+      3049
+    ],
+    [
+      2977,
+      3698
+    ],
+    [
+      3610,
+      4485
+    ],
+    [
+      4378,
+      5439
+    ],
+    [
+      5310,
+      6596
+    ],
+    [
+      6439,
+      8000
+    ]
+  ],
+  "uniform_share_top2_rows": 0.125,
+  "groups": {
+    "real": {
+      "n": 791,
+      "mean_top2_row_share": 0.4939,
+      "peak_row_mode": 13,
+      "peak_row_mode_hz": [
+        4378,
+        5439
+      ],
+      "frac_clips_peak_at_mode": 0.5487,
+      "share_top2_freq_rows": 0.1168,
+      "profile": [
+        0.1228,
+        0.0846,
+        0.0141,
+        0.0027,
+        0.0042,
+        0.0118,
+        0.0236,
+        0.0501,
+        0.0492,
+        0.0495,
+        0.0678,
+        0.0834,
+        0.1007,
+        0.2188,
+        0.1032,
+        0.0136
+      ]
+    },
+    "synthetic (all)": {
+      "n": 770,
+      "mean_top2_row_share": 0.5957,
+      "peak_row_mode": 13,
+      "peak_row_mode_hz": [
+        4378,
+        5439
+      ],
+      "frac_clips_peak_at_mode": 0.913,
+      "share_top2_freq_rows": 0.2597,
+      "profile": [
+        0.0656,
+        0.0523,
+        0.0137,
+        0.0029,
+        0.0035,
+        0.0084,
+        0.0169,
+        0.0393,
+        0.0426,
+        0.0336,
+        0.0385,
+        0.038,
+        0.0472,
+        0.3377,
+        0.2429,
+        0.0169
+      ]
+    },
+    "MusicGen_medium": {
+      "n": 153,
+      "mean_top2_row_share": 0.5611,
+      "peak_row_mode": 13,
+      "peak_row_mode_hz": [
+        4378,
+        5439
+      ],
+      "frac_clips_peak_at_mode": 0.8562,
+      "share_top2_freq_rows": 0.2379,
+      "profile": [
+        0.1066,
+        0.0867,
+        0.0222,
+        0.0022,
+        0.0021,
+        0.0066,
+        0.0146,
+        0.0363,
+        0.0319,
+        0.0286,
+        0.0375,
+        0.0336,
+        0.0448,
+        0.3085,
+        0.2181,
+        0.0197
+      ]
+    },
+    "audioldm2": {
+      "n": 159,
+      "mean_top2_row_share": 0.6316,
+      "peak_row_mode": 13,
+      "peak_row_mode_hz": [
+        4378,
+        5439
+      ],
+      "frac_clips_peak_at_mode": 0.9497,
+      "share_top2_freq_rows": 0.2921,
+      "profile": [
+        0.069,
+        0.057,
+        0.0132,
+        0.0019,
+        0.0018,
+        0.0056,
+        0.0145,
+        0.0284,
+        0.0375,
+        0.0287,
+        0.036,
+        0.0289,
+        0.0363,
+        0.349,
+        0.2759,
+        0.0161
+      ]
+    },
+    "musicldm": {
+      "n": 155,
+      "mean_top2_row_share": 0.6585,
+      "peak_row_mode": 13,
+      "peak_row_mode_hz": [
+        4378,
+        5439
+      ],
+      "frac_clips_peak_at_mode": 0.9226,
+      "share_top2_freq_rows": 0.272,
+      "profile": [
+        0.0544,
+        0.0367,
+        0.0071,
+        0.0013,
+        0.0017,
+        0.0075,
+        0.0143,
+        0.0256,
+        0.0285,
+        0.0299,
+        0.0328,
+        0.0465,
+        0.0557,
+        0.3862,
+        0.2586,
+        0.0133
+      ]
+    },
+    "mustango": {
+      "n": 159,
+      "mean_top2_row_share": 0.655,
+      "peak_row_mode": 13,
+      "peak_row_mode_hz": [
+        4378,
+        5439
+      ],
+      "frac_clips_peak_at_mode": 0.956,
+      "share_top2_freq_rows": 0.2914,
+      "profile": [
+        0.0308,
+        0.0262,
+        0.0071,
+        0.0017,
+        0.0034,
+        0.0092,
+        0.0188,
+        0.0364,
+        0.043,
+        0.0327,
+        0.037,
+        0.0364,
+        0.0538,
+        0.3722,
+        0.2765,
+        0.0149
+      ]
+    },
+    "stable_audio_open": {
+      "n": 144,
+      "mean_top2_row_share": 0.4596,
+      "peak_row_mode": 13,
+      "peak_row_mode_hz": [
+        4378,
+        5439
+      ],
+      "frac_clips_peak_at_mode": 0.875,
+      "share_top2_freq_rows": 0.1992,
+      "profile": [
+        0.0689,
+        0.0559,
+        0.0198,
+        0.0074,
+        0.009,
+        0.0136,
+        0.0228,
+        0.0727,
+        0.0741,
+        0.0493,
+        0.0504,
+        0.0452,
+        0.0454,
+        0.2662,
+        0.1787,
+        0.0205
+      ]
+    }
+  },
+  "ltas_peaks": {
+    "real": {
+      "max_peak_db_above_local_median": 12.5,
+      "top5_peak_hz": [
+        4516,
+        4520,
+        4523,
+        4512,
+        6449
+      ],
+      "mean_db_4_6khz_minus_2_4khz": -2.95
+    },
+    "MusicGen_medium": {
+      "max_peak_db_above_local_median": 13.25,
+      "top5_peak_hz": [
+        5301,
+        3137,
+        5297,
+        3141,
+        4621
+      ],
+      "mean_db_4_6khz_minus_2_4khz": -2.87
+    },
+    "audioldm2": {
+      "max_peak_db_above_local_median": 4.21,
+      "top5_peak_hz": [
+        5879,
+        3145,
+        5875,
+        3137,
+        7301
+      ],
+      "mean_db_4_6khz_minus_2_4khz": -3.6
+    },
+    "musicldm": {
+      "max_peak_db_above_local_median": 11.4,
+      "top5_peak_hz": [
+        7996,
+        8000,
+        7992,
+        7988,
+        7984
+      ],
+      "mean_db_4_6khz_minus_2_4khz": -6.26
+    },
+    "mustango": {
+      "max_peak_db_above_local_median": 6.91,
+      "top5_peak_hz": [
+        8000,
+        3801,
+        7996,
+        7000,
+        5879
+      ],
+      "mean_db_4_6khz_minus_2_4khz": -5.69
+    },
+    "stable_audio_open": {
+      "max_peak_db_above_local_median": 13.96,
+      "top5_peak_hz": [
+        3145,
+        3523,
+        3141,
+        6719,
+        3520
+      ],
+      "mean_db_4_6khz_minus_2_4khz": -0.74
+    }
+  }
+}
