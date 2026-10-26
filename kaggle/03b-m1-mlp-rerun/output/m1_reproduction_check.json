@@ -1,0 +1,45 @@
+{
+  "all_match": false,
+  "fields": {
+    "best_val_acc": {
+      "original": 0.9157,
+      "rerun": 0.9226,
+      "match": false
+    },
+    "early_stop_epoch": {
+      "original": 43,
+      "rerun": 43,
+      "match": true
+    },
+    "balanced_accuracy": {
+      "original": 0.8972,
+      "rerun": 0.9003,
+      "match": false
+    },
+    "precision": {
+      "original": 0.8821,
+      "rerun": 0.8846,
+      "match": false
+    },
+    "recall": {
+      "original": 0.9163,
+      "rerun": 0.92,
+      "match": false
+    },
+    "f1": {
+      "original": 0.8988,
+      "rerun": 0.902,
+      "match": false
+    },
+    "auc": {
+      "original": 0.9692,
+      "rerun": 0.9705,
+      "match": false
+    },
+    "eer": {
+      "original": 0.0983,
+      "rerun": 0.097,
+      "match": false
+    }
+  }
+}

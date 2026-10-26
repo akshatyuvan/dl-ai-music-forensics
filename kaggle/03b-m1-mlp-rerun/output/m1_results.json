@@ -1,0 +1,20 @@
+{
+  "model": "M1_MLP",
+  "seed": 42,
+  "device": "cpu",
+  "train_time_s": 10.9,
+  "best_val_acc": 0.9226,
+  "best_epoch": 28,
+  "early_stop_epoch": 43,
+  "selection_metric": "val_accuracy",
+  "params": 56065,
+  "balanced_accuracy": 0.9003,
+  "precision": 0.8846,
+  "recall": 0.92,
+  "f1": 0.902,
+  "auc": 0.9705,
+  "eer": 0.097,
+  "n_test": 1604,
+  "torch_version": "2.11.0+cpu",
+  "provenance": "written by script from run variables (03b rerun); replaces the hand-typed file from 03-m1-mlp"
+}
