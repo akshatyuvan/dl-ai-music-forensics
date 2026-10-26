@@ -1,0 +1,8 @@
+Group,n,Share of CAM in top-2 rows (5.3-8 kHz),Modal peak row (Hz),Clips peaking there
+real,791,0.1168,4378-5439,0.5487
+synthetic (all),770,0.2597,4378-5439,0.913
+MusicGen_medium,153,0.2379,4378-5439,0.8562
+audioldm2,159,0.2921,4378-5439,0.9497
+musicldm,155,0.272,4378-5439,0.9226
+mustango,159,0.2914,4378-5439,0.956
+stable_audio_open,144,0.1992,4378-5439,0.875

@@ -1,0 +1,8 @@
+| Group             |   Share top row |   Share top two rows |
+|:------------------|----------------:|---------------------:|
+| real              |          0.1029 |               0.1972 |
+| MusicGen_medium   |          0.1112 |               0.2066 |
+| audioldm2         |          0.1204 |               0.2228 |
+| musicldm          |          0.1279 |               0.2292 |
+| mustango          |          0.1229 |               0.2214 |
+| stable_audio_open |          0.1053 |               0.1988 |
