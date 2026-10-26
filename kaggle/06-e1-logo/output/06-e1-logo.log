@@ -1,0 +1,220 @@
+[{"stream_name":"stderr","time":6.295674006,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.295725335,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.199604992,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.199647141,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.199652446,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.19965613,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.791512664,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.791537726,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.791542509,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.791546856,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.826980677999998,"data":"2.11.0+cu128 | cuda: True | Tesla T4\n"}
+,{"stream_name":"stdout","time":17.714080157,"data":"/kaggle/input/datasets/akshatyuvan/fmc-m2-mels -\u003e ['labels.npy', 'm2_best.pt', 'm2_results.json', 'mels.npy', 'subset.csv']\n"}
+,{"stream_name":"stdout","time":17.714109499,"data":"/kaggle/input/datasets/akshatyuvan/fmc-m1-features -\u003e ['X.npy', 'm1_reproduction_check.json', 'm1_results.json', 'm1_results_interim_handtyped.json', 'subset.csv', 'y.npy']\n"}
+,{"stream_name":"stdout","time":17.714114557,"data":"/kaggle/input/datasets/akshatyuvan/fmc-manifest -\u003e ['manifest.csv']\n"}
+,{"stream_name":"stdout","time":17.714118171,"data":"/kaggle/input/datasets/akshatyuvan/fakemusiccaps-raw -\u003e ['MusicGen_medium', 'audioldm2', 'musicldm', 'mustango', 'stable_audio_open']\n"}
+,{"stream_name":"stdout","time":17.714121998,"data":"/kaggle/input/datasets/akshatyuvan/fmc-e1-results -\u003e ['README.md']\n"}
+,{"stream_name":"stdout","time":18.163557722,"data":"{'MusicGen_medium': {'M1': False, 'M2': False, 'M3': False}, 'stable_audio_open': {'M1': False, 'M2': False, 'M3': False}, 'mustango': {'M1': False, 'M2': False, 'M3': False}}\n"}
+,{"stream_name":"stdout","time":19.578893149,"data":"generator  MusicGen_medium  audioldm2  musicldm  mustango  real  \\\n"}
+,{"stream_name":"stdout","time":19.578918009,"data":"split                                                             \n"}
+,{"stream_name":"stdout","time":19.578925051,"data":"test                   160        160       160       160   804   \n"}
+,{"stream_name":"stdout","time":19.578934576,"data":"train                  749        749       749       749  3746   \n"}
+,{"stream_name":"stdout","time":19.578937461,"data":"val                    160        160       160       160   802   \n"}
+,{"stream_name":"stdout","time":19.578940011,"data":"\n"}
+,{"stream_name":"stdout","time":19.578942416,"data":"generator  stable_audio_open  \n"}
+,{"stream_name":"stdout","time":19.578944966,"data":"split                         \n"}
+,{"stream_name":"stdout","time":19.578947358,"data":"test                     160  \n"}
+,{"stream_name":"stdout","time":19.578958734,"data":"train                    749  \n"}
+,{"stream_name":"stdout","time":19.578961418,"data":"val                      160  \n"}
+,{"stream_name":"stdout","time":21.579913465,"data":"\n"}
+,{"stream_name":"stdout","time":21.579944602,"data":"========== fold: withhold MusicGen_medium ==========\n"}
+,{"stream_name":"stdout","time":21.579949807,"data":"train real 3746 synth 2996 (pos_weight 1.250) | val 1442 | closed test 1444 | seen ['audioldm2', 'musicldm', 'mustango', 'stable_audio_open']\n"}
+,{"stream_name":"stdout","time":44.713384683,"data":"MusicGen_medium: cache check on 16 clips | mel max |diff| 0.0000 dB | descriptor max diff 1.33e-06 feature-SDs\n"}
+,{"stream_name":"stdout","time":93.680710875,"data":"MusicGen_medium: open-set features (804, 128, 1001) (804, 86) in 48s, NaNs 0\n"}
+,{"stream_name":"stdout","time":93.680739896,"data":"  M1 ...\n"}
+,{"stream_name":"stdout","time":117.427606765,"data":"  M1: closed 0.9172 -\u003e open 0.7096 (withheld recall 0.4988, open AUC 0.8597)  -\u003e wrote e1_MusicGen_medium_M1.json\n"}
+,{"stream_name":"stdout","time":134.362491729,"data":"  fold train mel mean/std -44.937 / 16.972\n"}
+,{"stream_name":"stdout","time":134.362522255,"data":"  M2 ...\n"}
+,{"stream_name":"stdout","time":535.934044839,"data":"    epoch  0  val_acc 0.6893  (401s)\n"}
+,{"stream_name":"stdout","time":588.958091242,"data":"    epoch  1  val_acc 0.8918  (455s)\n"}
+,{"stream_name":"stdout","time":640.83169229,"data":"    epoch  2  val_acc 0.9619  (506s)\n"}
+,{"stream_name":"stdout","time":693.200347783,"data":"    epoch  3  val_acc 0.8897  (559s)\n"}
+,{"stream_name":"stdout","time":745.427146532,"data":"    epoch  4  val_acc 0.8953  (611s)\n"}
+,{"stream_name":"stdout","time":797.539428711,"data":"    epoch  5  val_acc 0.9771  (663s)\n"}
+,{"stream_name":"stdout","time":849.651911591,"data":"    epoch  6  val_acc 0.9653  (715s)\n"}
+,{"stream_name":"stdout","time":901.812141993,"data":"    epoch  7  val_acc 0.9293  (767s)\n"}
+,{"stream_name":"stdout","time":953.97512438,"data":"    epoch  8  val_acc 0.9695  (820s)\n"}
+,{"stream_name":"stdout","time":1006.186186189,"data":"    epoch  9  val_acc 0.9757  (872s)\n"}
+,{"stream_name":"stdout","time":1058.369125647,"data":"    epoch 10  val_acc 0.9834  (924s)\n"}
+,{"stream_name":"stdout","time":1110.599744452,"data":"    epoch 11  val_acc 0.9778  (976s)\n"}
+,{"stream_name":"stdout","time":1162.76447901,"data":"    epoch 12  val_acc 0.9840  (1028s)\n"}
+,{"stream_name":"stdout","time":1214.817586652,"data":"    epoch 13  val_acc 0.9757  (1080s)\n"}
+,{"stream_name":"stdout","time":1266.784819181,"data":"    epoch 14  val_acc 0.9847  (1132s)\n"}
+,{"stream_name":"stdout","time":1318.763713187,"data":"    epoch 15  val_acc 0.9840  (1184s)\n"}
+,{"stream_name":"stdout","time":1370.795055373,"data":"    epoch 16  val_acc 0.9854  (1236s)\n"}
+,{"stream_name":"stdout","time":1422.880931908,"data":"    epoch 17  val_acc 0.9854  (1288s)\n"}
+,{"stream_name":"stdout","time":1474.963686498,"data":"    epoch 18  val_acc 0.9854  (1341s)\n"}
+,{"stream_name":"stdout","time":1527.024059863,"data":"    epoch 19  val_acc 0.9854  (1393s)\n"}
+,{"stream_name":"stdout","time":1853.283376097,"data":"  M2: closed 0.9878 -\u003e open 0.6418 (withheld recall 0.2985, open AUC 0.9134)  -\u003e wrote e1_MusicGen_medium_M2.json\n"}
+,{"stream_name":"stdout","time":1853.283410544,"data":"  M3 ...\n"}
+,{"stream_name":"stdout","time":1918.025153547,"data":"    epoch  0  val_acc 0.8391  (65s)\n"}
+,{"stream_name":"stdout","time":1982.142205458,"data":"    epoch  1  val_acc 0.9196  (129s)\n"}
+,{"stream_name":"stdout","time":2045.943411474,"data":"    epoch  2  val_acc 0.9542  (193s)\n"}
+,{"stream_name":"stdout","time":2109.812457736,"data":"    epoch  3  val_acc 0.9736  (257s)\n"}
+,{"stream_name":"stdout","time":2173.407294886,"data":"    epoch  4  val_acc 0.9820  (320s)\n"}
+,{"stream_name":"stdout","time":2236.907018599,"data":"    epoch  5  val_acc 0.9730  (384s)\n"}
+,{"stream_name":"stdout","time":2300.54992228,"data":"    epoch  6  val_acc 0.9764  (447s)\n"}
+,{"stream_name":"stdout","time":2364.078537837,"data":"    epoch  7  val_acc 0.9840  (511s)\n"}
+,{"stream_name":"stdout","time":2427.473490084,"data":"    epoch  8  val_acc 0.9730  (574s)\n"}
+,{"stream_name":"stdout","time":2490.809338402,"data":"    epoch  9  val_acc 0.9834  (638s)\n"}
+,{"stream_name":"stdout","time":2554.170612136,"data":"    epoch 10  val_acc 0.9882  (701s)\n"}
+,{"stream_name":"stdout","time":2617.367908724,"data":"    epoch 11  val_acc 0.9910  (764s)\n"}
+,{"stream_name":"stdout","time":2680.206495923,"data":"    epoch 12  val_acc 0.9896  (827s)\n"}
+,{"stream_name":"stdout","time":2743.077086323,"data":"    epoch 13  val_acc 0.9882  (890s)\n"}
+,{"stream_name":"stdout","time":2805.943254266,"data":"    epoch 14  val_acc 0.9896  (953s)\n"}
+,{"stream_name":"stdout","time":2868.724851526,"data":"    epoch 15  val_acc 0.9910  (1015s)\n"}
+,{"stream_name":"stdout","time":2931.507135249,"data":"    epoch 16  val_acc 0.9910  (1078s)\n"}
+,{"stream_name":"stdout","time":2994.227516121,"data":"    epoch 17  val_acc 0.9910  (1141s)\n"}
+,{"stream_name":"stdout","time":3056.96398336,"data":"    epoch 18  val_acc 0.9910  (1204s)\n"}
+,{"stream_name":"stdout","time":3119.763422131,"data":"    epoch 19  val_acc 0.9917  (1266s)\n"}
+,{"stream_name":"stdout","time":3129.911575145,"data":"  M3: closed 0.9911 -\u003e open 0.5311 (withheld recall 0.0659, open AUC 0.7641)  -\u003e wrote e1_MusicGen_medium_M3.json\n"}
+,{"stream_name":"stdout","time":3129.911613559,"data":"\n"}
+,{"stream_name":"stdout","time":3129.911619248,"data":"========== fold: withhold stable_audio_open ==========\n"}
+,{"stream_name":"stdout","time":3129.911624166,"data":"train real 3746 synth 2996 (pos_weight 1.250) | val 1442 | closed test 1444 | seen ['MusicGen_medium', 'audioldm2', 'musicldm', 'mustango']\n"}
+,{"stream_name":"stdout","time":3137.358308295,"data":"stable_audio_open: cache check on 16 clips | mel max |diff| 0.0000 dB | descriptor max diff 6.64e-06 feature-SDs\n"}
+,{"stream_name":"stderr","time":3171.633129698,"data":"/usr/local/lib/python3.13/dist-packages/librosa/core/pitch.py:103: UserWarning: Trying to estimate tuning from empty frequency set.\n"}
+,{"stream_name":"stderr","time":3171.633196828,"data":"  return pitch_tuning(\n"}
+,{"stream_name":"stderr","time":3171.841804061,"data":"/usr/local/lib/python3.13/dist-packages/librosa/core/pitch.py:103: UserWarning: Trying to estimate tuning from empty frequency set.\n"}
+,{"stream_name":"stderr","time":3171.841839307,"data":"  return pitch_tuning(\n"}
+,{"stream_name":"stderr","time":3171.841847799,"data":"\n"}
+,{"stream_name":"stderr","time":3171.842131225,"data":"/usr/local/lib/python3.13/dist-packages/librosa/core/pitch.py:103: UserWarning: Trying to estimate tuning from empty frequency set.\n"}
+,{"stream_name":"stderr","time":3171.842188293,"data":"  return pitch_tuning(\n"}
+,{"stream_name":"stdout","time":3188.606899877,"data":"stable_audio_open: open-set features (804, 128, 1001) (804, 86) in 51s, NaNs 0\n"}
+,{"stream_name":"stdout","time":3188.606950757,"data":"  M1 ...\n"}
+,{"stream_name":"stdout","time":3200.595997211,"data":"  M1: closed 0.9109 -\u003e open 0.5280 (withheld recall 0.1592, open AUC 0.6154)  -\u003e wrote e1_stable_audio_open_M1.json\n"}
+,{"stream_name":"stdout","time":3228.469847839,"data":"  fold train mel mean/std -44.787 / 16.727\n"}
+,{"stream_name":"stdout","time":3228.469898948,"data":"  M2 ...\n"}
+,{"stream_name":"stdout","time":3314.997005718,"data":"    epoch  0  val_acc 0.8017  (87s)\n"}
+,{"stream_name":"stdout","time":3367.579913732,"data":"    epoch  1  val_acc 0.8689  (139s)\n"}
+,{"stream_name":"stdout","time":3419.398330023,"data":"    epoch  2  val_acc 0.8315  (191s)\n"}
+,{"stream_name":"stdout","time":3471.75566229,"data":"    epoch  3  val_acc 0.9348  (243s)\n"}
+,{"stream_name":"stdout","time":3523.841589678,"data":"    epoch  4  val_acc 0.9723  (295s)\n"}
+,{"stream_name":"stdout","time":3575.989005246,"data":"    epoch  5  val_acc 0.9757  (348s)\n"}
+,{"stream_name":"stdout","time":3628.037983166,"data":"    epoch  6  val_acc 0.9840  (400s)\n"}
+,{"stream_name":"stdout","time":3680.070723239,"data":"    epoch  7  val_acc 0.9549  (452s)\n"}
+,{"stream_name":"stdout","time":3732.05668252,"data":"    epoch  8  val_acc 0.9736  (504s)\n"}
+,{"stream_name":"stdout","time":3784.077920137,"data":"    epoch  9  val_acc 0.9917  (556s)\n"}
+,{"stream_name":"stdout","time":3836.172823657,"data":"    epoch 10  val_acc 0.9931  (608s)\n"}
+,{"stream_name":"stdout","time":3888.277745865,"data":"    epoch 11  val_acc 0.9903  (660s)\n"}
+,{"stream_name":"stdout","time":3940.395103292,"data":"    epoch 12  val_acc 0.9924  (712s)\n"}
+,{"stream_name":"stdout","time":3992.439228238,"data":"    epoch 13  val_acc 0.9924  (764s)\n"}
+,{"stream_name":"stdout","time":4044.308889988,"data":"    epoch 14  val_acc 0.9924  (816s)\n"}
+,{"stream_name":"stdout","time":4096.112990981,"data":"    epoch 15  val_acc 0.9958  (868s)\n"}
+,{"stream_name":"stdout","time":4147.967295691,"data":"    epoch 16  val_acc 0.9945  (919s)\n"}
+,{"stream_name":"stdout","time":4199.812386578,"data":"    epoch 17  val_acc 0.9951  (971s)\n"}
+,{"stream_name":"stdout","time":4251.684857393,"data":"    epoch 18  val_acc 0.9958  (1023s)\n"}
+,{"stream_name":"stdout","time":4303.569261111,"data":"    epoch 19  val_acc 0.9951  (1075s)\n"}
+,{"stream_name":"stdout","time":4346.615560263,"data":"  M2: closed 0.9934 -\u003e open 0.5218 (withheld recall 0.0473, open AUC 0.7923)  -\u003e wrote e1_stable_audio_open_M2.json\n"}
+,{"stream_name":"stdout","time":4346.615617063,"data":"  M3 ...\n"}
+,{"stream_name":"stdout","time":4411.247403968,"data":"    epoch  0  val_acc 0.8925  (65s)\n"}
+,{"stream_name":"stdout","time":4475.125652093,"data":"    epoch  1  val_acc 0.8967  (129s)\n"}
+,{"stream_name":"stdout","time":4538.984489105,"data":"    epoch  2  val_acc 0.9175  (192s)\n"}
+,{"stream_name":"stdout","time":4602.734864792,"data":"    epoch  3  val_acc 0.9598  (256s)\n"}
+,{"stream_name":"stdout","time":4666.678507883,"data":"    epoch  4  val_acc 0.9619  (320s)\n"}
+,{"stream_name":"stdout","time":4730.375367879,"data":"    epoch  5  val_acc 0.9709  (384s)\n"}
+,{"stream_name":"stdout","time":4793.978461568,"data":"    epoch  6  val_acc 0.9827  (447s)\n"}
+,{"stream_name":"stdout","time":4857.58911363,"data":"    epoch  7  val_acc 0.9639  (511s)\n"}
+,{"stream_name":"stdout","time":4921.06336024,"data":"    epoch  8  val_acc 0.9688  (574s)\n"}
+,{"stream_name":"stdout","time":4984.327731339,"data":"    epoch  9  val_acc 0.9820  (638s)\n"}
+,{"stream_name":"stdout","time":5047.508054193,"data":"    epoch 10  val_acc 0.9868  (701s)\n"}
+,{"stream_name":"stdout","time":5110.595617687,"data":"    epoch 11  val_acc 0.9847  (764s)\n"}
+,{"stream_name":"stdout","time":5173.741105691,"data":"    epoch 12  val_acc 0.9882  (827s)\n"}
+,{"stream_name":"stdout","time":5236.733529412,"data":"    epoch 13  val_acc 0.9917  (890s)\n"}
+,{"stream_name":"stdout","time":5299.513670555,"data":"    epoch 14  val_acc 0.9931  (953s)\n"}
+,{"stream_name":"stdout","time":5362.064145194,"data":"    epoch 15  val_acc 0.9938  (1015s)\n"}
+,{"stream_name":"stdout","time":5424.619414014,"data":"    epoch 16  val_acc 0.9938  (1078s)\n"}
+,{"stream_name":"stdout","time":5487.323399455,"data":"    epoch 17  val_acc 0.9931  (1141s)\n"}
+,{"stream_name":"stdout","time":5549.915001265,"data":"    epoch 18  val_acc 0.9931  (1203s)\n"}
+,{"stream_name":"stdout","time":5612.475261248,"data":"    epoch 19  val_acc 0.9938  (1266s)\n"}
+,{"stream_name":"stdout","time":5622.583820262,"data":"  M3: closed 0.9914 -\u003e open 0.5187 (withheld recall 0.0435, open AUC 0.8821)  -\u003e wrote e1_stable_audio_open_M3.json\n"}
+,{"stream_name":"stdout","time":5622.58386539,"data":"\n"}
+,{"stream_name":"stdout","time":5622.58387412,"data":"========== fold: withhold mustango ==========\n"}
+,{"stream_name":"stdout","time":5622.583881427,"data":"train real 3746 synth 2996 (pos_weight 1.250) | val 1442 | closed test 1444 | seen ['MusicGen_medium', 'audioldm2', 'musicldm', 'stable_audio_open']\n"}
+,{"stream_name":"stdout","time":5630.558857436,"data":"mustango: cache check on 16 clips | mel max |diff| 0.0312 dB | descriptor max diff 3.14e-06 feature-SDs\n"}
+,{"stream_name":"stdout","time":5681.957387666,"data":"mustango: open-set features (804, 128, 1001) (804, 86) in 51s, NaNs 0\n"}
+,{"stream_name":"stdout","time":5681.957444948,"data":"  M1 ...\n"}
+,{"stream_name":"stdout","time":5690.473773291,"data":"  M1: closed 0.9012 -\u003e open 0.8389 (withheld recall 0.7910, open AUC 0.9141)  -\u003e wrote e1_mustango_M1.json\n"}
+,{"stream_name":"stdout","time":5697.935669637,"data":"  fold train mel mean/std -45.820 / 17.221\n"}
+,{"stream_name":"stdout","time":5697.935713094,"data":"  M2 ...\n"}
+,{"stream_name":"stdout","time":5750.79484898,"data":"    epoch  0  val_acc 0.5347  (53s)\n"}
+,{"stream_name":"stdout","time":5802.64032885,"data":"    epoch  1  val_acc 0.8239  (105s)\n"}
+,{"stream_name":"stdout","time":5855.005768967,"data":"    epoch  2  val_acc 0.8377  (157s)\n"}
+,{"stream_name":"stdout","time":5907.170783832,"data":"    epoch  3  val_acc 0.8523  (209s)\n"}
+,{"stream_name":"stdout","time":5959.341366587,"data":"    epoch  4  val_acc 0.9417  (261s)\n"}
+,{"stream_name":"stdout","time":6011.46487542,"data":"    epoch  5  val_acc 0.9071  (314s)\n"}
+,{"stream_name":"stdout","time":6063.532041097,"data":"    epoch  6  val_acc 0.9660  (366s)\n"}
+,{"stream_name":"stdout","time":6115.596723225,"data":"    epoch  7  val_acc 0.9674  (418s)\n"}
+,{"stream_name":"stdout","time":6167.652808638,"data":"    epoch  8  val_acc 0.9119  (470s)\n"}
+,{"stream_name":"stdout","time":6219.653373489,"data":"    epoch  9  val_acc 0.9750  (522s)\n"}
+,{"stream_name":"stdout","time":6271.780171337,"data":"    epoch 10  val_acc 0.9771  (574s)\n"}
+,{"stream_name":"stdout","time":6323.977633858,"data":"    epoch 11  val_acc 0.9771  (626s)\n"}
+,{"stream_name":"stdout","time":6376.113268832,"data":"    epoch 12  val_acc 0.9750  (678s)\n"}
+,{"stream_name":"stdout","time":6428.213149955,"data":"    epoch 13  val_acc 0.9806  (730s)\n"}
+,{"stream_name":"stdout","time":6480.360158478,"data":"    epoch 14  val_acc 0.9813  (782s)\n"}
+,{"stream_name":"stdout","time":6532.426759085,"data":"    epoch 15  val_acc 0.9827  (834s)\n"}
+,{"stream_name":"stdout","time":6584.465503219,"data":"    epoch 16  val_acc 0.9806  (887s)\n"}
+,{"stream_name":"stdout","time":6636.510549728,"data":"    epoch 17  val_acc 0.9813  (939s)\n"}
+,{"stream_name":"stdout","time":6688.57733337,"data":"    epoch 18  val_acc 0.9820  (991s)\n"}
+,{"stream_name":"stdout","time":6740.583505852,"data":"    epoch 19  val_acc 0.9785  (1043s)\n"}
+,{"stream_name":"stdout","time":6748.376061257,"data":"  M2: closed 0.9866 -\u003e open 0.9695 (withheld recall 0.9502, open AUC 0.9973)  -\u003e wrote e1_mustango_M2.json\n"}
+,{"stream_name":"stdout","time":6748.376102727,"data":"  M3 ...\n"}
+,{"stream_name":"stdout","time":6812.739737601,"data":"    epoch  0  val_acc 0.7829  (64s)\n"}
+,{"stream_name":"stdout","time":6877.087270775,"data":"    epoch  1  val_acc 0.9071  (129s)\n"}
+,{"stream_name":"stdout","time":6941.185446532,"data":"    epoch  2  val_acc 0.9300  (193s)\n"}
+,{"stream_name":"stdout","time":7005.090420351,"data":"    epoch  3  val_acc 0.9327  (257s)\n"}
+,{"stream_name":"stdout","time":7069.11023719,"data":"    epoch  4  val_acc 0.9723  (321s)\n"}
+,{"stream_name":"stdout","time":7133.060732915,"data":"    epoch  5  val_acc 0.9716  (385s)\n"}
+,{"stream_name":"stdout","time":7196.963169563,"data":"    epoch  6  val_acc 0.9723  (449s)\n"}
+,{"stream_name":"stdout","time":7260.798132757,"data":"    epoch  7  val_acc 0.9730  (512s)\n"}
+,{"stream_name":"stdout","time":7324.531831501,"data":"    epoch  8  val_acc 0.9764  (576s)\n"}
+,{"stream_name":"stdout","time":7388.257999515,"data":"    epoch  9  val_acc 0.9785  (640s)\n"}
+,{"stream_name":"stdout","time":7451.661087641,"data":"    epoch 10  val_acc 0.9674  (703s)\n"}
+,{"stream_name":"stdout","time":7514.955220409,"data":"    epoch 11  val_acc 0.9834  (767s)\n"}
+,{"stream_name":"stdout","time":7578.312145444,"data":"    epoch 12  val_acc 0.9840  (830s)\n"}
+,{"stream_name":"stdout","time":7641.616444635,"data":"    epoch 13  val_acc 0.9827  (893s)\n"}
+,{"stream_name":"stdout","time":7704.699637967,"data":"    epoch 14  val_acc 0.9854  (956s)\n"}
+,{"stream_name":"stdout","time":7767.78788452,"data":"    epoch 15  val_acc 0.9799  (1019s)\n"}
+,{"stream_name":"stdout","time":7830.958589641,"data":"    epoch 16  val_acc 0.9840  (1083s)\n"}
+,{"stream_name":"stdout","time":7893.956664198,"data":"    epoch 17  val_acc 0.9847  (1146s)\n"}
+,{"stream_name":"stdout","time":7956.898511069,"data":"    epoch 18  val_acc 0.9840  (1209s)\n"}
+,{"stream_name":"stdout","time":8019.994480408,"data":"    epoch 19  val_acc 0.9827  (1272s)\n"}
+,{"stream_name":"stdout","time":8029.95854277,"data":"  M3: closed 0.9807 -\u003e open 0.9776 (withheld recall 0.9751, open AUC 0.9967)  -\u003e wrote e1_mustango_M3.json\n"}
+,{"stream_name":"stdout","time":8030.135764444,"data":"             fold model  closed_bal_acc  open_bal_acc   delta  withheld_recall  closed_recall  open_auc  open_eer\n"}
+,{"stream_name":"stdout","time":8030.135791586,"data":"  MusicGen_medium    M1          0.9172        0.7096 -0.2077           0.4988         0.9141    0.8597    0.2214\n"}
+,{"stream_name":"stdout","time":8030.135799246,"data":"  MusicGen_medium    M2          0.9878        0.6418 -0.3461           0.2985         0.9906    0.9134    0.1542\n"}
+,{"stream_name":"stdout","time":8030.135804109,"data":"  MusicGen_medium    M3          0.9911        0.5311 -0.4600           0.0659         0.9859    0.7641    0.3097\n"}
+,{"stream_name":"stdout","time":8030.135809104,"data":"stable_audio_open    M1          0.9109        0.5280 -0.3829           0.1592         0.9250    0.6154    0.4229\n"}
+,{"stream_name":"stdout","time":8030.135814008,"data":"stable_audio_open    M2          0.9934        0.5218 -0.4717           0.0473         0.9906    0.7923    0.2823\n"}
+,{"stream_name":"stdout","time":8030.135818848,"data":"stable_audio_open    M3          0.9914        0.5187 -0.4728           0.0435         0.9891    0.8821    0.1903\n"}
+,{"stream_name":"stdout","time":8030.135823525,"data":"         mustango    M1          0.9012        0.8389 -0.0623           0.7910         0.9156    0.9141    0.1654\n"}
+,{"stream_name":"stdout","time":8030.135828444,"data":"         mustango    M2          0.9866        0.9695 -0.0171           0.9502         0.9844    0.9973    0.0249\n"}
+,{"stream_name":"stdout","time":8030.135846269,"data":"         mustango    M3          0.9807        0.9776 -0.0031           0.9751         0.9812    0.9967    0.0224\n"}
+,{"stream_name":"stdout","time":8030.135850974,"data":"\n"}
+,{"stream_name":"stdout","time":8030.135854196,"data":"mean over folds:\n"}
+,{"stream_name":"stdout","time":8030.135857434,"data":"       closed_bal_acc  open_bal_acc   delta  withheld_recall  open_auc\n"}
+,{"stream_name":"stdout","time":8030.135860763,"data":"model                                                                 \n"}
+,{"stream_name":"stdout","time":8030.135864075,"data":"M1             0.9098        0.6922 -0.2176           0.4830    0.7964\n"}
+,{"stream_name":"stdout","time":8030.135867407,"data":"M2             0.9893        0.7110 -0.2783           0.4320    0.9010\n"}
+,{"stream_name":"stdout","time":8030.1358707,"data":"M3             0.9877        0.6758 -0.3120           0.3615    0.8810\n"}
+,{"stream_name":"stdout","time":8030.550805581,"data":"['__notebook__.ipynb', 'e1_MusicGen_medium_M1.json', 'e1_MusicGen_medium_M1.pt', 'e1_MusicGen_medium_M2.json', 'e1_MusicGen_medium_M2.pt', 'e1_MusicGen_medium_M3.json', 'e1_MusicGen_medium_M3.pt', 'e1_closed_vs_open.png', 'e1_mustango_M1.json', 'e1_mustango_M1.pt', 'e1_mustango_M2.json', 'e1_mustango_M2.pt', 'e1_mustango_M3.json', 'e1_mustango_M3.pt', 'e1_stable_audio_open_M1.json', 'e1_stable_audio_open_M1.pt', 'e1_stable_audio_open_M2.json', 'e1_stable_audio_open_M2.pt', 'e1_stable_audio_open_M3.json', 'e1_stable_audio_open_M3.pt', 'e1_summary.csv']\n"}
+,{"stream_name":"stderr","time":8035.607351207,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8035.607386015,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8035.777315192,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8035.777346371,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8036.529879096,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":8036.622226881,"data":"[NbConvertApp] Writing 83968 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":8039.042984454,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8039.665617339,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":8039.665648403,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8039.665902891,"data":"[NbConvertApp] Writing 418755 bytes to __results__.html\n"}
+]

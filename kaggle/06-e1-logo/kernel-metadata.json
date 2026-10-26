@@ -1,0 +1,15 @@
+{
+  "id": "akshatyuvan/06-e1-logo",
+  "title": "06-e1-logo",
+  "code_file": "06-e1-logo.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["akshatyuvan/fmc-m2-mels", "akshatyuvan/fmc-m1-features", "akshatyuvan/fmc-manifest", "akshatyuvan/fakemusiccaps-raw", "akshatyuvan/fmc-e1-results"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

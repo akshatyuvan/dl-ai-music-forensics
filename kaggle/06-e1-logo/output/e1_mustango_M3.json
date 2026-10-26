@@ -1,0 +1,153 @@
+{
+  "experiment": "E1_leave_one_generator_out",
+  "fold": "mustango",
+  "withheld_generator": "mustango",
+  "seen_generators": [
+    "MusicGen_medium",
+    "audioldm2",
+    "musicldm",
+    "stable_audio_open"
+  ],
+  "seed": 42,
+  "selection_metric": "val_accuracy",
+  "n_train_real": 3746,
+  "n_train_synth": 2996,
+  "pos_weight": 1.2503,
+  "n_val": 1442,
+  "open_set_feature_check": {
+    "mel_max_abs_diff_db": 0.03125,
+    "descriptor_max_diff_in_sd": 3.141e-06,
+    "n_checked": 16
+  },
+  "model": "M3",
+  "device": "Tesla T4",
+  "best_val_acc": 0.9854,
+  "best_epoch": 14,
+  "train_time_s": 1271.6,
+  "norm_mean": -45.81955337524414,
+  "norm_std": 17.22096061706543,
+  "config": "Adam 0.001 wd 1e-4, batch 32, warmup 1 epoch + cosine to 0.01x per step, 20 epochs, clip 5.0, fp16 + GradScaler, pos_weight",
+  "history": [
+    {
+      "epoch": 0,
+      "val_acc": 0.7829,
+      "elapsed_s": 64.4
+    },
+    {
+      "epoch": 1,
+      "val_acc": 0.9071,
+      "elapsed_s": 128.7
+    },
+    {
+      "epoch": 2,
+      "val_acc": 0.93,
+      "elapsed_s": 192.8
+    },
+    {
+      "epoch": 3,
+      "val_acc": 0.9327,
+      "elapsed_s": 256.7
+    },
+    {
+      "epoch": 4,
+      "val_acc": 0.9723,
+      "elapsed_s": 320.7
+    },
+    {
+      "epoch": 5,
+      "val_acc": 0.9716,
+      "elapsed_s": 384.7
+    },
+    {
+      "epoch": 6,
+      "val_acc": 0.9723,
+      "elapsed_s": 448.6
+    },
+    {
+      "epoch": 7,
+      "val_acc": 0.973,
+      "elapsed_s": 512.4
+    },
+    {
+      "epoch": 8,
+      "val_acc": 0.9764,
+      "elapsed_s": 576.1
+    },
+    {
+      "epoch": 9,
+      "val_acc": 0.9785,
+      "elapsed_s": 639.9
+    },
+    {
+      "epoch": 10,
+      "val_acc": 0.9674,
+      "elapsed_s": 703.3
+    },
+    {
+      "epoch": 11,
+      "val_acc": 0.9834,
+      "elapsed_s": 766.6
+    },
+    {
+      "epoch": 12,
+      "val_acc": 0.984,
+      "elapsed_s": 829.9
+    },
+    {
+      "epoch": 13,
+      "val_acc": 0.9827,
+      "elapsed_s": 893.2
+    },
+    {
+      "epoch": 14,
+      "val_acc": 0.9854,
+      "elapsed_s": 956.3
+    },
+    {
+      "epoch": 15,
+      "val_acc": 0.9799,
+      "elapsed_s": 1019.4
+    },
+    {
+      "epoch": 16,
+      "val_acc": 0.984,
+      "elapsed_s": 1082.6
+    },
+    {
+      "epoch": 17,
+      "val_acc": 0.9847,
+      "elapsed_s": 1145.6
+    },
+    {
+      "epoch": 18,
+      "val_acc": 0.984,
+      "elapsed_s": 1208.5
+    },
+    {
+      "epoch": 19,
+      "val_acc": 0.9827,
+      "elapsed_s": 1271.6
+    }
+  ],
+  "closed_set": {
+    "balanced_accuracy": 0.9807,
+    "precision": 0.9752,
+    "recall": 0.9812,
+    "f1": 0.9782,
+    "auc": 0.9983,
+    "eer": 0.0199,
+    "n_real": 804,
+    "n_synth": 640
+  },
+  "open_set": {
+    "balanced_accuracy": 0.9776,
+    "precision": 0.98,
+    "recall": 0.9751,
+    "f1": 0.9776,
+    "auc": 0.9967,
+    "eer": 0.0224,
+    "n_real": 804,
+    "n_synth": 804
+  },
+  "delta_bal_acc_open_minus_closed": -0.0031
+}

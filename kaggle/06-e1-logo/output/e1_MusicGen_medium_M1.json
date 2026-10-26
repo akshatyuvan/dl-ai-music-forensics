@@ -1,0 +1,50 @@
+{
+  "experiment": "E1_leave_one_generator_out",
+  "fold": "MusicGen_medium",
+  "withheld_generator": "MusicGen_medium",
+  "seen_generators": [
+    "audioldm2",
+    "musicldm",
+    "mustango",
+    "stable_audio_open"
+  ],
+  "seed": 42,
+  "selection_metric": "val_accuracy",
+  "n_train_real": 3746,
+  "n_train_synth": 2996,
+  "pos_weight": 1.2503,
+  "n_val": 1442,
+  "open_set_feature_check": {
+    "mel_max_abs_diff_db": 0.0,
+    "descriptor_max_diff_in_sd": 1.326e-06,
+    "n_checked": 16
+  },
+  "model": "M1",
+  "device": "cpu (1 thread)",
+  "best_val_acc": 0.939,
+  "best_epoch": 85,
+  "early_stop_epoch": 100,
+  "train_time_s": 18.6,
+  "config": "Adam 1e-3 wd 1e-4, batch 128, early stop 15, pos_weight",
+  "closed_set": {
+    "balanced_accuracy": 0.9172,
+    "precision": 0.9014,
+    "recall": 0.9141,
+    "f1": 0.9077,
+    "auc": 0.9717,
+    "eer": 0.0858,
+    "n_real": 804,
+    "n_synth": 640
+  },
+  "open_set": {
+    "balanced_accuracy": 0.7096,
+    "precision": 0.8624,
+    "recall": 0.4988,
+    "f1": 0.632,
+    "auc": 0.8597,
+    "eer": 0.2214,
+    "n_real": 804,
+    "n_synth": 804
+  },
+  "delta_bal_acc_open_minus_closed": -0.2077
+}
