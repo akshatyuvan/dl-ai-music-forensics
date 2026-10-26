@@ -1,0 +1,121 @@
+[{"stream_name":"stderr","time":6.867872224,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.867916166,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.824418446,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.824449442,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.824453012,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.824455642,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.445965393,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.445991221,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.445995434,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.445998988,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":43.1420835,"data":"2.11.0+cu128 5.16.1 | Tesla T4\n"}
+,{"stream_name":"stdout","time":104.735659244,"data":"{'train': 7491, 'val': 1602, 'test': 1604}\n"}
+,{"stream_name":"stderr","time":104.957679907,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":104.957705429,"data":"\n"}
+,{"stream_name":"stderr","time":104.957710744,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":105.075423456,"data":"AudioSet normalisation mean/std: -4.2677393 4.5689974\n"}
+,{"stream_name":"stdout","time":572.914813493,"data":"features (10697, 1024, 128) 468s | NaNs 0\n"}
+,{"stream_name":"stderr","time":573.268747146,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":573.268776982,"data":"\n"}
+,{"stream_name":"stderr","time":573.268781862,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":576.836863266,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":576.836903449,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":576.836908405,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":576.836912048,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":576.836915541,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":576.836919163,"data":"\n"}
+,{"stream_name":"stderr","time":576.836954438,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":576.836959655,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stderr","time":576.836964413,"data":"\n"}
+,{"stream_name":"stderr","time":576.836968191,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":576.836972397,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":576.836977351,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":576.836981653,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":576.836986325,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":576.83699074,"data":"\n"}
+,{"stream_name":"stderr","time":576.836998222,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":576.837002531,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stdout","time":577.245646179,"data":"params 86189569 | pos_weight 1.0003 | steps/epoch 937\n"}
+,{"stream_name":"stdout","time":1228.092900125,"data":"  epoch 0  train_loss 0.1449  val_acc 0.9888  (651s)\n"}
+,{"stream_name":"stdout","time":1873.344696506,"data":"  epoch 1  train_loss 0.0387  val_acc 0.9925  (1296s)\n"}
+,{"stream_name":"stdout","time":2510.087667418,"data":"  epoch 2  train_loss 0.0056  val_acc 0.9963  (1933s)\n"}
+,{"stream_name":"stdout","time":3144.850592575,"data":"  epoch 3  train_loss 0.0002  val_acc 0.9981  (2568s)\n"}
+,{"stream_name":"stdout","time":3184.519480871,"data":"{\n"}
+,{"stream_name":"stdout","time":3184.519520525,"data":"  \"model\": \"M4_AST\",\n"}
+,{"stream_name":"stdout","time":3184.519526111,"data":"  \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":3184.5195305,"data":"  \"device\": \"cuda\",\n"}
+,{"stream_name":"stdout","time":3184.519534956,"data":"  \"gpu\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":3184.519539282,"data":"  \"train_time_s\": 2567.8,\n"}
+,{"stream_name":"stdout","time":3184.519543561,"data":"  \"best_val_acc\": 0.9981,\n"}
+,{"stream_name":"stdout","time":3184.519547756,"data":"  \"best_epoch\": 3,\n"}
+,{"stream_name":"stdout","time":3184.519551905,"data":"  \"selection_metric\": \"val_accuracy\",\n"}
+,{"stream_name":"stdout","time":3184.519569323,"data":"  \"params\": 86189569,\n"}
+,{"stream_name":"stdout","time":3184.519574953,"data":"  \"balanced_accuracy\": 0.9988,\n"}
+,{"stream_name":"stdout","time":3184.519580034,"data":"  \"precision\": 0.9975,\n"}
+,{"stream_name":"stdout","time":3184.5195846,"data":"  \"recall\": 1.0,\n"}
+,{"stream_name":"stdout","time":3184.519588816,"data":"  \"f1\": 0.9988,\n"}
+,{"stream_name":"stdout","time":3184.519592905,"data":"  \"auc\": 1.0,\n"}
+,{"stream_name":"stdout","time":3184.519597097,"data":"  \"eer\": 0.0012,\n"}
+,{"stream_name":"stdout","time":3184.519601238,"data":"  \"n_test\": 1604,\n"}
+,{"stream_name":"stdout","time":3184.519605633,"data":"  \"test_recall_per_generator\": {\n"}
+,{"stream_name":"stdout","time":3184.519609841,"data":"    \"MusicGen_medium\": 1.0,\n"}
+,{"stream_name":"stdout","time":3184.519614021,"data":"    \"audioldm2\": 1.0,\n"}
+,{"stream_name":"stdout","time":3184.519625734,"data":"    \"musicldm\": 1.0,\n"}
+,{"stream_name":"stdout","time":3184.519629098,"data":"    \"mustango\": 1.0,\n"}
+,{"stream_name":"stdout","time":3184.519632331,"data":"    \"stable_audio_open\": 1.0\n"}
+,{"stream_name":"stdout","time":3184.51963577,"data":"  },\n"}
+,{"stream_name":"stdout","time":3184.519640638,"data":"  \"test_specificity_real\": 0.9975,\n"}
+,{"stream_name":"stdout","time":3184.51964824,"data":"  \"config\": {\n"}
+,{"stream_name":"stdout","time":3184.519665241,"data":"    \"pretrained\": \"MIT/ast-finetuned-audioset-10-10-0.4593\",\n"}
+,{"stream_name":"stdout","time":3184.519669498,"data":"    \"epochs\": 4,\n"}
+,{"stream_name":"stdout","time":3184.519673336,"data":"    \"batch_size\": 8,\n"}
+,{"stream_name":"stdout","time":3184.519677276,"data":"    \"optimizer\": \"Adam\",\n"}
+,{"stream_name":"stdout","time":3184.519681314,"data":"    \"peak_lr\": 2e-05,\n"}
+,{"stream_name":"stdout","time":3184.519684621,"data":"    \"weight_decay\": 0.0001,\n"}
+,{"stream_name":"stdout","time":3184.519687993,"data":"    \"schedule\": \"linear warmup 1 epoch (0.1-\u003e1.0) + cosine to 0.01x, per step\",\n"}
+,{"stream_name":"stdout","time":3184.519691843,"data":"    \"grad_clip_norm\": 5.0,\n"}
+,{"stream_name":"stdout","time":3184.519695184,"data":"    \"amp\": \"fp16 autocast + GradScaler\",\n"}
+,{"stream_name":"stdout","time":3184.519698545,"data":"    \"pos_weight\": 1.0003,\n"}
+,{"stream_name":"stdout","time":3184.519701953,"data":"    \"front_end\": \"ASTFeatureExtractor: Kaldi fbank 128 bins, 25 ms / 10 ms, 1024 frames, AudioSet norm mean -4.2677393 std 4.5689974\",\n"}
+,{"stream_name":"stdout","time":3184.51970573,"data":"    \"transformers_version\": \"5.16.1\"\n"}
+,{"stream_name":"stdout","time":3184.519709093,"data":"  }\n"}
+,{"stream_name":"stdout","time":3184.519712262,"data":"}\n"}
+,{"stream_name":"stderr","time":3185.270933692,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":3185.270960569,"data":"\n"}
+,{"stream_name":"stderr","time":3185.270965762,"data":"[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `527`.\n"}
+,{"stream_name":"stderr","time":3185.476259042,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":3185.476309181,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":3185.476316094,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":3185.476319942,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":3185.476323386,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":3185.476326699,"data":"\n"}
+,{"stream_name":"stderr","time":3185.476330045,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":3185.476333777,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stderr","time":3185.476338031,"data":"\n"}
+,{"stream_name":"stderr","time":3185.476341427,"data":"[transformers] \u001b[1mASTForAudioClassification LOAD REPORT\u001b[0m from: MIT/ast-finetuned-audioset-10-10-0.4593\n"}
+,{"stream_name":"stderr","time":3185.476361937,"data":"Key                     | Status   |                                                                                         \n"}
+,{"stream_name":"stderr","time":3185.476366438,"data":"------------------------+----------+-----------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":3185.476370627,"data":"classifier.dense.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527]) vs model:torch.Size([1])          \n"}
+,{"stream_name":"stderr","time":3185.476374928,"data":"classifier.dense.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([527, 768]) vs model:torch.Size([1, 768])\n"}
+,{"stream_name":"stderr","time":3185.476379198,"data":"\n"}
+,{"stream_name":"stderr","time":3185.476383143,"data":"Notes:\n"}
+,{"stream_name":"stderr","time":3185.476387443,"data":"- MISMATCH:\tckpt weights were loaded, but they did not match the original empty weight shapes.\n"}
+,{"stream_name":"stdout","time":3225.806527741,"data":"real               top row (5327-7670 Hz) 0.103 (uniform 0.083) | top two rows 0.197\n"}
+,{"stream_name":"stdout","time":3225.806580515,"data":"MusicGen_medium    top row (5327-7670 Hz) 0.111 (uniform 0.083) | top two rows 0.207\n"}
+,{"stream_name":"stdout","time":3225.806588846,"data":"audioldm2          top row (5327-7670 Hz) 0.120 (uniform 0.083) | top two rows 0.223\n"}
+,{"stream_name":"stdout","time":3225.806594653,"data":"musicldm           top row (5327-7670 Hz) 0.128 (uniform 0.083) | top two rows 0.229\n"}
+,{"stream_name":"stdout","time":3225.806600007,"data":"mustango           top row (5327-7670 Hz) 0.123 (uniform 0.083) | top two rows 0.221\n"}
+,{"stream_name":"stdout","time":3225.806604769,"data":"stable_audio_open  top row (5327-7670 Hz) 0.105 (uniform 0.083) | top two rows 0.199\n"}
+,{"stream_name":"stdout","time":3226.294497426,"data":"['__notebook__.ipynb', 'm4_attention_rollout.json', 'm4_attention_rollout.png', 'm4_best_fp16.pt', 'm4_results.json', 'm4_training_curve.png']\n"}
+,{"stream_name":"stderr","time":3231.427641816,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3231.427668053,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3231.597374425,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3231.59740119,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3232.362678751,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3232.447451921,"data":"[NbConvertApp] Writing 247303 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3234.847944072,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3235.438108547,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":3235.438133074,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":3235.438384529,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":3235.438630034,"data":"[NbConvertApp] Writing 424635 bytes to __results__.html\n"}
+]

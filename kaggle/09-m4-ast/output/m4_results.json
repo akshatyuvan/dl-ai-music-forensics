@@ -1,0 +1,70 @@
+{
+  "model": "M4_AST",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "train_time_s": 2567.8,
+  "best_val_acc": 0.9981,
+  "best_epoch": 3,
+  "selection_metric": "val_accuracy",
+  "params": 86189569,
+  "balanced_accuracy": 0.9988,
+  "precision": 0.9975,
+  "recall": 1.0,
+  "f1": 0.9988,
+  "auc": 1.0,
+  "eer": 0.0012,
+  "n_test": 1604,
+  "test_recall_per_generator": {
+    "MusicGen_medium": 1.0,
+    "audioldm2": 1.0,
+    "musicldm": 1.0,
+    "mustango": 1.0,
+    "stable_audio_open": 1.0
+  },
+  "test_specificity_real": 0.9975,
+  "config": {
+    "pretrained": "MIT/ast-finetuned-audioset-10-10-0.4593",
+    "epochs": 4,
+    "batch_size": 8,
+    "optimizer": "Adam",
+    "peak_lr": 2e-05,
+    "weight_decay": 0.0001,
+    "schedule": "linear warmup 1 epoch (0.1->1.0) + cosine to 0.01x, per step",
+    "grad_clip_norm": 5.0,
+    "amp": "fp16 autocast + GradScaler",
+    "pos_weight": 1.0003,
+    "front_end": "ASTFeatureExtractor: Kaldi fbank 128 bins, 25 ms / 10 ms, 1024 frames, AudioSet norm mean -4.2677393 std 4.5689974",
+    "transformers_version": "5.16.1"
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 0.1449,
+      "val_acc": 0.9888,
+      "val_bal_acc": 0.9888,
+      "elapsed_s": 650.9
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.0387,
+      "val_acc": 0.9925,
+      "val_bal_acc": 0.9925,
+      "elapsed_s": 1296.1
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0056,
+      "val_acc": 0.9963,
+      "val_bal_acc": 0.9963,
+      "elapsed_s": 1932.8
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0002,
+      "val_acc": 0.9981,
+      "val_bal_acc": 0.9981,
+      "elapsed_s": 2567.6
+    }
+  ]
+}
