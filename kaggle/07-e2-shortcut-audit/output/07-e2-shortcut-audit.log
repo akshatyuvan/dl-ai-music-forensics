@@ -1,0 +1,77 @@
+[{"stream_name":"stderr","time":6.728943589,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.728981251,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.631691543,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.631716024,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.63172071,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.631724494,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.230958803,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.230990579,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.230996389,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.230999954,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.630656502,"data":"2.11.0+cu128 | cuda: True | Tesla T4\n"}
+,{"stream_name":"stdout","time":17.630686529,"data":"/kaggle/input/datasets/akshatyuvan/fmc-m2-mels\n"}
+,{"stream_name":"stdout","time":17.630691983,"data":"/kaggle/input/datasets/akshatyuvan/fmc-m1-features\n"}
+,{"stream_name":"stdout","time":17.630696441,"data":"/kaggle/input/datasets/akshatyuvan/fmc-m3-results\n"}
+,{"stream_name":"stdout","time":17.630700841,"data":"/kaggle/input/datasets/akshatyuvan/fakemusiccaps-raw\n"}
+,{"stream_name":"stdout","time":17.630704942,"data":"/kaggle/input/datasets/akshatyuvan/musiccaps-real-16k\n"}
+,{"stream_name":"stdout","time":17.630709145,"data":"/kaggle/input/datasets/akshatyuvan/fmc-e2-results\n"}
+,{"stream_name":"stdout","time":18.212225843,"data":"ffmpeg: /usr/bin/ffmpeg\n"}
+,{"stream_name":"stdout","time":19.939891927,"data":"{'real': 804, 'MusicGen_medium': 160, 'audioldm2': 160, 'musicldm': 160, 'mustango': 160, 'stable_audio_open': 160}\n"}
+,{"stream_name":"stdout","time":24.324927958,"data":"mp3 decode lag (samples) on 8 clips: [0, 0, 0, 0, 0, 0, 0, 0]\n"}
+,{"stream_name":"stdout","time":39.265841239,"data":"M1 retrained: best val 0.9170 at epoch 28\n"}
+,{"stream_name":"stdout","time":83.091376073,"data":"cached-feature balanced accuracy: {'M1': 0.8947, 'M2': 0.9732, 'M3': 0.9869} | published: {'M1': 0.9003, 'M2': 0.9732, 'M3': 0.9869}\n"}
+,{"stream_name":"stdout","time":157.536287413,"data":"intact vs cache: mel max |diff| 0.0000 dB | descriptor max 7.73e-03 SDs (feature 53, clip tz2TlSMmTp4 / musicldm) | M1 max score diff 1.86e-05, prediction flips 0\n"}
+,{"stream_name":"stdout","time":167.966689129,"data":"intact       M1 bal 0.8947 spec 0.873 rec 0.916 auc 0.970  M2 bal 0.9732 spec 0.984 rec 0.963 auc 0.996  M3 bal 0.9869 spec 0.990 rec 0.984 auc 0.999  (85s)\n"}
+,{"stream_name":"stdout","time":226.981201567,"data":"lowpass_7k   M1 bal 0.5044 spec 0.994 rec 0.015 auc 0.655  M2 bal 0.9225 spec 0.989 rec 0.856 auc 0.989  M3 bal 0.9231 spec 0.996 rec 0.850 auc 0.982  (59s)\n"}
+,{"stream_name":"stdout","time":285.856084585,"data":"lowpass_6k   M1 bal 0.5150 spec 0.990 rec 0.040 auc 0.659  M2 bal 0.8138 spec 0.986 rec 0.641 auc 0.971  M3 bal 0.9557 spec 0.985 rec 0.926 auc 0.993  (59s)\n"}
+,{"stream_name":"stdout","time":345.530756422,"data":"lowpass_5k   M1 bal 0.5069 spec 1.000 rec 0.014 auc 0.792  M2 bal 0.7213 spec 0.988 rec 0.455 auc 0.960  M3 bal 0.9569 spec 0.978 rec 0.936 auc 0.989  (60s)\n"}
+,{"stream_name":"stdout","time":404.667630702,"data":"lowpass_4k   M1 bal 0.5012 spec 1.000 rec 0.003 auc 0.732  M2 bal 0.7225 spec 0.988 rec 0.458 auc 0.958  M3 bal 0.8206 spec 0.990 rec 0.651 auc 0.976  (59s)\n"}
+,{"stream_name":"stdout","time":464.549834207,"data":"lowpass_3k   M1 bal 0.5056 spec 1.000 rec 0.011 auc 0.761  M2 bal 0.7682 spec 0.986 rec 0.550 auc 0.962  M3 bal 0.9520 spec 0.959 rec 0.945 auc 0.988  (60s)\n"}
+,{"stream_name":"stdout","time":522.803657228,"data":"lowpass_2k   M1 bal 0.6666 spec 0.855 rec 0.479 auc 0.755  M2 bal 0.7857 spec 0.964 rec 0.608 auc 0.946  M3 bal 0.8065 spec 0.658 rec 0.955 auc 0.943  (58s)\n"}
+,{"stream_name":"stdout","time":739.406577125,"data":"mp3_128k     M1 bal 0.6103 spec 0.898 rec 0.323 auc 0.750  M2 bal 0.9444 spec 0.976 rec 0.912 auc 0.989  M3 bal 0.7350 spec 0.480 rec 0.990 auc 0.911  (217s)\n"}
+,{"stream_name":"stdout","time":955.156231323,"data":"mp3_64k      M1 bal 0.6071 spec 0.909 rec 0.305 auc 0.745  M2 bal 0.9394 spec 0.975 rec 0.904 auc 0.987  M3 bal 0.7294 spec 0.470 rec 0.989 auc 0.903  (216s)\n"}
+,{"stream_name":"stdout","time":1172.57580389,"data":"mp3_32k      M1 bal 0.5269 spec 0.981 rec 0.072 auc 0.676  M2 bal 0.6156 spec 0.994 rec 0.237 auc 0.893  M3 bal 0.7938 spec 0.743 rec 0.845 auc 0.890  (217s)\n"}
+,{"stream_name":"stdout","time":1172.790693286,"data":" condition model  bal_acc  delta_vs_intact  specificity_real  recall_synth    auc    eer  rec_MusicGen_medium  rec_audioldm2  rec_musicldm  rec_mustango  rec_stable_audio_open\n"}
+,{"stream_name":"stdout","time":1172.790717382,"data":"    intact    M1   0.8947           0.0000            0.8731        0.9163 0.9697 0.1007               0.9125         0.8688        0.9437        0.9187                 0.9375\n"}
+,{"stream_name":"stdout","time":1172.790723568,"data":"    intact    M2   0.9732           0.0000            0.9838        0.9625 0.9961 0.0249               0.9563         0.9938        0.9688        0.9938                 0.9000\n"}
+,{"stream_name":"stdout","time":1172.790753376,"data":"    intact    M3   0.9869           0.0000            0.9900        0.9838 0.9992 0.0137               0.9688         0.9812        0.9938        1.0000                 0.9750\n"}
+,{"stream_name":"stdout","time":1172.790759059,"data":"lowpass_7k    M1   0.5044          -0.3903            0.9938        0.0150 0.6552 0.3980               0.0125         0.0063        0.0312        0.0063                 0.0187\n"}
+,{"stream_name":"stdout","time":1172.79076457,"data":"lowpass_7k    M2   0.9225          -0.0507            0.9888        0.8562 0.9890 0.0498               0.8938         0.9688        0.5687        0.9875                 0.8625\n"}
+,{"stream_name":"stdout","time":1172.790791886,"data":"lowpass_7k    M3   0.9231          -0.0638            0.9963        0.8500 0.9816 0.0697               0.9125         0.9437        0.5188        0.9437                 0.9313\n"}
+,{"stream_name":"stdout","time":1172.790799667,"data":"lowpass_6k    M1   0.5150          -0.3797            0.9900        0.0400 0.6595 0.3744               0.0563         0.0125        0.0312        0.0375                 0.0625\n"}
+,{"stream_name":"stdout","time":1172.790804684,"data":"lowpass_6k    M2   0.8138          -0.1594            0.9863        0.6412 0.9714 0.0833               0.7000         0.7625        0.3688        0.6438                 0.7312\n"}
+,{"stream_name":"stdout","time":1172.790809431,"data":"lowpass_6k    M3   0.9557          -0.0312            0.9851        0.9263 0.9933 0.0348               0.9313         0.9875        0.7750        0.9750                 0.9625\n"}
+,{"stream_name":"stdout","time":1172.790839292,"data":"lowpass_5k    M1   0.5069          -0.3878            1.0000        0.0138 0.7920 0.2774               0.0250         0.0125        0.0187        0.0000                 0.0125\n"}
+,{"stream_name":"stdout","time":1172.790845676,"data":"lowpass_5k    M2   0.7213          -0.2519            0.9876        0.4550 0.9602 0.1020               0.6188         0.3500        0.2625        0.3312                 0.7125\n"}
+,{"stream_name":"stdout","time":1172.790850244,"data":"lowpass_5k    M3   0.9569          -0.0300            0.9776        0.9363 0.9890 0.0423               0.9563         0.9750        0.8000        0.9875                 0.9625\n"}
+,{"stream_name":"stdout","time":1172.790874364,"data":"lowpass_4k    M1   0.5012          -0.3935            1.0000        0.0025 0.7318 0.3284               0.0063         0.0000        0.0063        0.0000                 0.0000\n"}
+,{"stream_name":"stdout","time":1172.790878947,"data":"lowpass_4k    M2   0.7225          -0.2507            0.9876        0.4575 0.9578 0.1045               0.6687         0.3125        0.2625        0.2938                 0.7500\n"}
+,{"stream_name":"stdout","time":1172.79088334,"data":"lowpass_4k    M3   0.8206          -0.1663            0.9900        0.6512 0.9756 0.0858               0.5375         0.6625        0.5125        0.6125                 0.9313\n"}
+,{"stream_name":"stdout","time":1172.790887379,"data":"lowpass_3k    M1   0.5056          -0.3891            1.0000        0.0112 0.7610 0.3097               0.0250         0.0063        0.0125        0.0000                 0.0125\n"}
+,{"stream_name":"stdout","time":1172.790891387,"data":"lowpass_3k    M2   0.7682          -0.2050            0.9863        0.5500 0.9622 0.0983               0.7188         0.5312        0.2875        0.4250                 0.7875\n"}
+,{"stream_name":"stdout","time":1172.790895342,"data":"lowpass_3k    M3   0.9520          -0.0349            0.9590        0.9450 0.9875 0.0460               0.9125         0.9625        0.9313        0.9625                 0.9563\n"}
+,{"stream_name":"stdout","time":1172.7908995,"data":"lowpass_2k    M1   0.6666          -0.2281            0.8545        0.4788 0.7554 0.3221               0.6125         0.5437        0.3688        0.1562                 0.7125\n"}
+,{"stream_name":"stdout","time":1172.790903531,"data":"lowpass_2k    M2   0.7857          -0.1875            0.9639        0.6075 0.9459 0.1206               0.8063         0.5875        0.3688        0.4188                 0.8562\n"}
+,{"stream_name":"stdout","time":1172.790907789,"data":"lowpass_2k    M3   0.8065          -0.1804            0.6580        0.9550 0.9431 0.1281               0.9625         0.8938        0.9938        0.9437                 0.9812\n"}
+,{"stream_name":"stdout","time":1172.790911831,"data":"  mp3_128k    M1   0.6103          -0.2844            0.8980        0.3225 0.7495 0.3147               0.2687         0.1688        0.3312        0.2500                 0.5938\n"}
+,{"stream_name":"stdout","time":1172.790916582,"data":"  mp3_128k    M2   0.9444          -0.0288            0.9764        0.9125 0.9885 0.0498               0.9563         0.9875        0.6875        0.9875                 0.9437\n"}
+,{"stream_name":"stdout","time":1172.790920857,"data":"  mp3_128k    M3   0.7350          -0.2519            0.4801        0.9900 0.9114 0.1953               0.9688         0.9875        0.9938        1.0000                 1.0000\n"}
+,{"stream_name":"stdout","time":1172.790924803,"data":"   mp3_64k    M1   0.6071          -0.2876            0.9092        0.3050 0.7450 0.3209               0.2750         0.1688        0.3063        0.2125                 0.5625\n"}
+,{"stream_name":"stdout","time":1172.790928781,"data":"   mp3_64k    M2   0.9394          -0.0338            0.9751        0.9038 0.9868 0.0560               0.9437         0.9625        0.7000        0.9750                 0.9375\n"}
+,{"stream_name":"stdout","time":1172.790936706,"data":"   mp3_64k    M3   0.7294          -0.2575            0.4701        0.9888 0.9035 0.1978               0.9688         0.9875        0.9938        0.9938                 1.0000\n"}
+,{"stream_name":"stdout","time":1172.79095776,"data":"   mp3_32k    M1   0.5269          -0.3678            0.9813        0.0725 0.6763 0.3607               0.0312         0.0437        0.0938        0.0437                 0.1500\n"}
+,{"stream_name":"stdout","time":1172.790964859,"data":"   mp3_32k    M2   0.6156          -0.3576            0.9938        0.2375 0.8927 0.1791               0.4562         0.1187        0.1688        0.1187                 0.3250\n"}
+,{"stream_name":"stdout","time":1172.790968999,"data":"   mp3_32k    M3   0.7938          -0.1931            0.7425        0.8450 0.8905 0.1953               0.8500         0.8875        0.8438        0.8063                 0.8375\n"}
+,{"stream_name":"stdout","time":1173.911365198,"data":"['__notebook__.ipynb', 'e2_degradation.png', 'e2_m1_retrained.pt', 'e2_per_generator_lowpass.png', 'e2_results.json', 'e2_summary.csv']\n"}
+,{"stream_name":"stderr","time":1178.96565613,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1178.965689845,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1179.138294148,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1179.13832328,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1179.896248546,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1179.976107056,"data":"[NbConvertApp] Writing 305181 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1182.345092267,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1182.981425133,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":1182.981447445,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":1182.981734235,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":1182.982013766,"data":"[NbConvertApp] Writing 408618 bytes to __results__.html\n"}
+]

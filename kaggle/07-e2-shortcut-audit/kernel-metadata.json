@@ -1,0 +1,15 @@
+{
+  "id": "akshatyuvan/07-e2-shortcut-audit",
+  "title": "07-e2-shortcut-audit",
+  "code_file": "07-e2-shortcut-audit.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["akshatyuvan/fmc-m2-mels", "akshatyuvan/fmc-m1-features", "akshatyuvan/fmc-m3-results", "akshatyuvan/fakemusiccaps-raw", "akshatyuvan/musiccaps-real-16k", "akshatyuvan/fmc-e2-results"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
